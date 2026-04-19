@@ -195,6 +195,47 @@ nav{background:#fff;border-bottom:1px solid var(--border);position:sticky;top:0;
 .icard-action-arrow{font-size:11px;font-weight:700;color:var(--red);flex-shrink:0;margin-top:1px;}
 .icard-action-text{font-size:11px;font-weight:500;color:var(--ink2);line-height:1.5;}
 footer{background:#fff;border-top:1px solid var(--border);padding:20px 28px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;font-size:11px;color:var(--muted);}
+/* Paid Ads + Promotions */
+.pp-grid{display:grid;grid-template-columns:minmax(320px,0.9fr) minmax(0,1.6fr);gap:16px;}
+@media (max-width:960px){.pp-grid{grid-template-columns:1fr;}}
+.pp-panel{background:#fff;border:1px solid var(--border);border-radius:14px;box-shadow:0 1px 3px rgba(0,0,0,.05);display:flex;flex-direction:column;overflow:hidden;}
+.pp-panel-head{display:flex;align-items:center;justify-content:space-between;padding:16px 20px;border-bottom:1px solid var(--border);background:#f9f8f5;gap:10px;}
+.pp-panel-eyebrow{font-size:9px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--red);margin-bottom:4px;}
+.pp-panel-title{font-size:14px;font-weight:600;color:var(--ink);}
+.pp-panel-period{font-size:10px;font-weight:600;color:var(--soft);background:#fff;border:1px solid var(--border);padding:4px 10px;border-radius:20px;white-space:nowrap;}
+.pp-metrics{padding:18px 20px;display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+.pp-metric{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:14px 14px 12px;position:relative;overflow:hidden;}
+.pp-metric-accent{position:absolute;top:0;left:0;right:0;height:2px;}
+.pp-metric-label{font-size:9px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:6px;}
+.pp-metric-val{font-size:20px;font-weight:600;color:var(--ink);line-height:1.1;margin-bottom:4px;}
+.pp-metric-last{font-size:10px;color:var(--soft);line-height:1.5;}
+.pp-metric-last strong{font-weight:600;color:var(--ink2);}
+.pp-metric-badge{display:inline-flex;align-items:center;gap:3px;font-size:10px;font-weight:600;padding:2px 7px;border-radius:20px;margin-top:5px;}
+.pp-panel-foot{padding:12px 20px 16px;border-top:1px solid var(--border);background:#fafaf7;font-size:11px;color:var(--soft);line-height:1.65;}
+.pp-panel-foot strong{color:var(--ink2);font-weight:600;}
+.promo-table-wrap{overflow-x:auto;}
+.promo-table{width:100%;border-collapse:collapse;font-size:12px;min-width:640px;}
+.promo-table thead tr{background:#fafaf7;border-bottom:1px solid var(--border);}
+.promo-table thead th{padding:10px 12px;text-align:left;font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);white-space:nowrap;}
+.promo-table thead th.r{text-align:right;}
+.promo-table tbody tr{border-bottom:1px solid var(--border);transition:background .12s;}
+.promo-table tbody tr:last-child{border-bottom:none;}
+.promo-table tbody tr:hover{background:#faf9f7;}
+.promo-table td{padding:10px 12px;color:var(--ink2);vertical-align:middle;}
+.promo-table td.r{text-align:right;font-weight:600;color:var(--ink);}
+.promo-name{font-size:11.5px;font-weight:600;color:var(--ink);line-height:1.35;max-width:200px;}
+.promo-type-badge{display:inline-flex;align-items:center;font-family:'DM Sans',sans-serif;font-size:10.5px;font-weight:600;padding:4px 10px;border-radius:6px;border:1px solid var(--border2);background:#fff;color:var(--ink2);white-space:nowrap;}
+.promo-type-badge.t-ship{background-color:var(--blue-dim);color:var(--blue);border-color:var(--blue-mid);}
+.promo-type-badge.t-flash{background-color:var(--red-dim);color:var(--red);border-color:var(--red-mid);}
+.promo-type-badge.t-disc{background-color:var(--amber-dim);color:var(--amber);border-color:var(--amber-mid);}
+.promo-type-badge.t-bmsm{background-color:var(--purple-dim);color:var(--purple);border-color:var(--purple-mid);}
+.promo-type-badge.t-coup{background-color:var(--teal-dim);color:var(--teal);border-color:var(--teal-mid);}
+.promo-type-badge.t-gwp{background-color:#fde8ec;color:#b91c52;border-color:#f4bac9;}
+.promo-period{display:inline-flex;align-items:center;gap:5px;font-size:10px;color:var(--soft);background:var(--surface3);padding:3px 9px;border-radius:20px;white-space:nowrap;}
+.roi-pill{display:inline-flex;align-items:center;font-size:11px;font-weight:700;padding:3px 9px;border-radius:20px;}
+.roi-strong{background:var(--green-dim);color:var(--green);}
+.roi-ok{background:var(--amber-dim);color:var(--amber);}
+.roi-weak{background:var(--red-dim);color:var(--red);}
 </style>
 </head>
 <body>
@@ -207,38 +248,38 @@ const D = {
   "agency": "Humanz",
   "client": "Each & Every",
   "report_month": "Apr 2026",
-  "last_updated": "Apr 13, 2026",
-  "days_elapsed": 12,
+  "last_updated": "Apr 19, 2026",
+  "days_elapsed": 18,
   "days_in_month": 30,
   "highlights": "April has $2,610 banked in 12 days - pacing conservatively, but with $7,000 in flat-fee content yet to post and 147 samples activating over the next 3-4 weeks, W3 and W4 are expected to deliver the bulk of the month. Active affiliates are up 135% vs March. The deodorant and body wash categories are resonating - @danielle_below's content is proving the formula works.",
   "pill1_text": "TikTok Shop Overview",
   "pill2_text": "Affiliate Performance",
   "pill3_text": "Sample Tracking",
   "pill4_text": "Top Videos",
-  "gmv_target": 15000,
+  "gmv_target": 10000,
   "gmv_last_month": 677,
   "w1_gmv": 702,
-  "w2_gmv": 1908,
-  "w3_gmv": null,
+  "w2_gmv": 2007,
+  "w3_gmv": 745,
   "w4_gmv": null,
   "w2_partial": true,
-  "w2_days_done": 6,
-  "trends_projected": 6525,
+  "w2_days_done": 4,
+  "trends_projected": 5757,
   "active_affiliates": 120,
   "active_affiliates_last": 51,
   "affiliates_target": 200,
-  "total_videos": 90,
+  "total_videos": 122,
   "total_videos_last": 40,
   "enrolled_affiliates": 2856,
   "enrolled_affiliates_last": 2856,
-  "samples_sent": 147,
+  "samples_sent": 61,
   "samples_last_month": 71,
   "samples_target": 250,
   "samples_projection": "Projected GMV impact: ~$4,785-$9,570 based on 4.0%-17.4% historical conversion x $76 avg GMV per converter.",
-  "samples_sent_this_month": 147,
-  "samples_posted": 216,
-  "samples_converted": 62,
-  "samples_gmv": 1457,
+  "samples_sent_this_month": 61,
+  "samples_posted": 74,
+  "samples_converted": 10,
+  "samples_gmv": 2094,
   "flatfee_videos": 32,
   "flatfee_spend": 7000,
   "flatfee_creators": 5,
@@ -251,238 +292,238 @@ const D = {
       "danielle_below",
       "@danielle_below",
       "Flat-Fee",
-      "$987",
-      2,
-      "24644",
-      "$216.63",
+      "$1,247",
+      40,
+      "33786",
+      "$37",
       0,
-      "$61"
+      "$76"
     ],
     [
       2,
       "lesliesoldano",
       "@lesliesoldano",
       "Flat-Fee",
-      "$288",
-      2,
-      "12529",
-      "$98.15",
+      "$536",
+      17,
+      "20791",
+      "$26",
       0,
-      "$18"
+      "$45"
     ],
     [
       3,
+      "oliviacella1",
+      "@oliviacella1",
+      "Flat-Fee",
+      "$64",
+      2,
+      "11140",
+      "$6",
+      1,
+      "$3"
+    ],
+    [
+      4,
       "annstyleandbeauty",
       "@annstyleandbeauty",
       "Flat-Fee",
       "$46",
       1,
-      "423",
-      "$110.07",
+      "430",
+      "$107",
       0,
       "$7"
     ],
     [
-      4,
+      5,
       "glambyben",
       "@glambyben",
       "Flat-Fee",
       "$46",
       1,
-      "250",
-      "$187.35",
+      "255",
+      "$180",
       0,
       "$2"
     ],
     [
+      6,
+      "schweaver5",
+      "@schweaver5",
+      "Flat-Fee",
+      "$36",
+      1,
+      "1583",
+      "$23",
       5,
+      "$6"
+    ],
+    [
+      7,
       "victoriaalese",
       "@victoriaalese",
       "Flat-Fee",
       "$33",
       1,
-      "218",
-      "$154.28",
+      "415",
+      "$80",
       0,
       "$7"
     ],
     [
-      6,
-      "oliviacella1",
-      "@oliviacella1",
+      8,
+      "ashleymarie0711",
+      "@ashleymarie0711",
       "Flat-Fee",
-      "$32",
+      "$31",
       1,
-      "7783",
-      "$9.03",
+      "522",
+      "$59",
+      0,
+      "$6"
+    ],
+    [
+      9,
+      "bargin.bag.brenda",
+      "@bargin.bag.brenda",
+      "Flat-Fee",
+      "$30",
       1,
+      "352",
+      "$85",
+      0,
       "$2"
     ],
     [
-      7,
+      10,
       "digitaljinxy",
       "@digitaljinxy",
-      "Flat-Fee",
+      "Commission",
       "$26",
       1,
-      "1925",
-      "$22.40",
+      "2603",
+      "$10",
       2,
       "$2"
     ],
     [
-      8,
+      11,
+      "kellygracemae",
+      "@kellygracemae",
+      "Commission",
+      "$0",
+      0,
+      "1",
+      "$0",
+      0,
+      "$0"
+    ],
+    [
+      12,
+      "daliadiaz",
+      "@daliadiaz",
+      "Flat-Fee",
+      "$0",
+      0,
+      "0",
+      "-",
+      0,
+      "$0"
+    ],
+    [
+      13,
       "ohthts.dess",
       "@ohthts.dess",
       "Commission",
       "$0",
       0,
       "0",
-      "0",
+      "-",
       0,
       "$0"
     ],
     [
-      9,
+      14,
+      "valsday",
+      "@valsday",
+      "Commission",
+      "$0",
+      0,
+      "0",
+      "-",
+      0,
+      "$0"
+    ],
+    [
+      15,
       "sophiarosielo",
       "@sophiarosielo",
       "Commission",
       "$0",
       0,
-      "1",
-      "0",
+      "2",
+      "$0",
       0,
       "$0"
     ],
     [
-      10,
+      16,
       "laurapenate",
       "@laurapenate",
       "Commission",
       "$0",
       0,
       "0",
-      "0",
+      "-",
       0,
       "$0"
     ],
     [
-      11,
+      17,
       "ms_lishh",
       "@ms_lishh",
       "Commission",
       "$0",
       0,
       "0",
-      "0",
-      0,
-      "$0"
-    ],
-    [
-      12,
-      "naecobleu",
-      "@naecobleu",
-      "Commission",
-      "$0",
-      0,
-      "6",
-      "0",
-      0,
-      "$0"
-    ],
-    [
-      13,
-      "bremarie20",
-      "@bremarie20",
-      "Commission",
-      "$0",
-      0,
-      "7",
-      "0",
-      0,
-      "$0"
-    ],
-    [
-      14,
-      "savbabyyy",
-      "@savbabyyy",
-      "Commission",
-      "$0",
-      0,
-      "0",
-      "0",
-      0,
-      "$0"
-    ],
-    [
-      15,
-      "lisaspillsthetea",
-      "@lisaspillsthetea",
-      "Commission",
-      "$0",
-      0,
-      "0",
-      "0",
-      0,
-      "$0"
-    ],
-    [
-      16,
-      "nyshiemastallings",
-      "@nyshiemastallings",
-      "Commission",
-      "$0",
-      0,
-      "0",
-      "0",
-      0,
-      "$0"
-    ],
-    [
-      17,
-      "esthersue22",
-      "@esthersue22",
-      "Commission",
-      "$0",
-      0,
-      "5",
-      "0",
+      "-",
       0,
       "$0"
     ],
     [
       18,
-      "sedonaraeee",
-      "@sedonaraeee",
+      "naecobleu",
+      "@naecobleu",
       "Commission",
       "$0",
       0,
-      "3",
-      "0",
+      "7",
+      "$0",
       0,
       "$0"
     ],
     [
       19,
-      "jessikabaileyg",
-      "@jessikabaileyg",
+      "brianapaniagua",
+      "@brianapaniagua",
       "Commission",
       "$0",
       0,
-      "1",
       "0",
+      "-",
       0,
       "$0"
     ],
     [
       20,
-      "glowupwithcrissy",
-      "@glowupwithcrissy",
+      "bremarie20",
+      "@bremarie20",
       "Commission",
       "$0",
       0,
-      "2",
-      "0",
+      "11",
+      "$0",
       0,
       "$0"
     ]
@@ -492,12 +533,12 @@ const D = {
       1,
       "@danielle_below",
       "Flat-Fee",
-      "This is your sign to romanticize your shower. I’ve been switching over to cleaner fragrance in my routine, and this body wash feels like skincare for your body — not just soap. 100% natural fragrance. No sulfates. No parabens. No artificial fragrance. Infused with plant-based ceramides, moringa oil, and lactic acid so your skin feels smooth, hydrated, and actually cared for. Right now I’m using Eternal Summer (Coconut & Lime) and it literally smells like vacation but elevated. A simple shower… but make it a reset. 🤍 @Each & Every #eachandevery #naturalbodycare #plantbasedskincare #bodycare #showertok",
+      "This is your sign to romanticize your shower. I’ve been switching over to cleaner fragrance in my routine, and this body wash feels like skincare for your body — not just soap. 100% natural fragrance. No sulfates. No parabens. No artificial fragrance. Infused with plant-based ceramides, moringa oil, and lactic acid so your skin feels smooth, hydrated, and actually cared for. Right now I’m using Eternal Summer (Coconut & Lime) and it literally smells like vacation but elevated. A simple shower… but make it a reset. 🤍 @Each & Every  #eachandevery #naturalbodycare #plantbasedskincare #bodycare #showertok",
       "Feb 28",
-      "$362.00",
-      13,
-      "5510",
-      "$65.85",
+      "$524",
+      18,
+      "8656",
+      "$60.55",
       "https://www.tiktok.com/@danielle_below/video/7611950304942230815",
       "https://i.ibb.co/PzhwGFKX/Screenshot-2026-04-14-at-8-57-43-PM.png"
     ],
@@ -505,12 +546,12 @@ const D = {
       2,
       "@danielle_below",
       "Flat-Fee",
-      "But for real though, best deodorant I’ve ever used. No irritation, all natural and smells better than some of my perfumes. @Each & Every #eachandevery #deodorant #bodycare #momhumor #smellgood",
+      "But for real though, best deodorant I’ve ever used. No irritation, all natural and smells better than some of my perfumes.  @Each & Every  #eachandevery #deodorant #bodycare #momhumor #smellgood",
       "Feb 27",
-      "$278.79",
-      11,
-      "11960",
-      "$26.90",
+      "$313",
+      12,
+      "15499",
+      "$20.19",
       "https://www.tiktok.com/@danielle_below/video/7611692803613068575",
       "https://i.ibb.co/ymMpvWjJ/Screenshot-2026-04-14-at-8-59-54-PM.png"
     ],
@@ -520,231 +561,231 @@ const D = {
       "Flat-Fee",
       "clean ingredients, actually hydrating for the skin, and it smells amazing. Love this Day Dream (citrus + vetiver) scent @Each & Every #eachandevery #plantbasedskincare #bodywash #plantbasedtiktok",
       "Mar 6",
-      "$153.10",
-      5,
-      "9056",
-      "$15.84",
+      "$293",
+      10,
+      "14555",
+      "$20.12",
       "https://www.tiktok.com/@lesliesoldano/video/7614136155155549453",
       "https://i.ibb.co/fGHFztM7/Screenshot-2026-04-14-at-9-02-47-PM.png"
     ],
     [
       4,
-      "@danielle_below",
+      "@lesliesoldano",
       "Flat-Fee",
-      "A natural deodorant that WORKS AND SMELLS INCREDIBLE. Yes. @Each & Every #eachandevery #deodorant #naturaldeodorant #bestdeodorant #luxuryscents",
-      "Feb 26",
-      "$123.67",
-      4,
-      "2210",
-      "$52.38",
-      "https://www.tiktok.com/@danielle_below/video/7611335970729839902",
-      "https://i.ibb.co/DPCtYY5q/Screenshot-2026-04-14-at-9-04-39-PM.png"
+      "I can’t believe so many natural deodorants have artificial fragrances! Thank you @Each & Every for making an aluminum free, paraben free deodorant using essential oils 👏👏 #eachandevery #naturaldeodorant #aluminumfreedeodorant #deodorant",
+      "Mar 6",
+      "$135",
+      5,
+      "1737",
+      "$77.64",
+      "https://v16m.tiktokcdn-us.com/8562cccfe8d27ac340219c99dbfa29d2/69e53fb0/video/tos/useast5/tos-useast5-ve-0068c002-tx/o0fEUEyDgJFBR6qFf5pRDgA4QqW8vqID3hoV8S/?a=1180&bti=OTU3NGYuMTA6&ch=0&cr=0&dr=0&er=0&lr=default&cd=0%7C0%7C0%7C0&cv=1&br=1020&bt=510&cs=0&ds=6&ft=GSDrKInz7ThO7ByPXq8Zmo&mime_type=video_mp4&qs=5&rc=NTg5M2QzNzo7ZWQ3NTRoNEBpajc2cXY5cjtxOTMzZzczNEBjYWNhLi4yNjQxNGE0NTM2YSNwXmVeMmRjcWlhLS1kMS9zcw%3D%3D&vvpl=1&l=20260419144801FAB5DC684748FB5C5A5C&btag=e00088000",
+      "https://i.ibb.co/5xJhZTgs/les.png"
     ],
     [
       5,
       "@danielle_below",
       "Flat-Fee",
-      "Turns out I was wearing deodorant wrong this whole time. If your deodorant doesn’t complement your perfume, your scent layering is off. This Each & Every mini set lets you match your deodorant to your fragrance. 🌿✨ @Each & Every #eachandevery #deodorant #bodycare #signaturescents",
-      "Mar 5",
-      "$108.00",
-      3,
-      "2278",
-      "$43.90",
-      "https://www.tiktok.com/@danielle_below/video/7613610916717939999",
+      "A natural deodorant that WORKS AND SMELLS INCREDIBLE. Yes.  @Each & Every  #eachandevery #deodorant #naturaldeodorant #bestdeodorant #luxuryscents",
+      "Feb 26",
+      "$124",
+      4,
+      "2994",
+      "$41.31",
+      "https://www.tiktok.com/@danielle_below/video/7611335970729839902",
       "https://i.ibb.co/3y0cV5hT/Screenshot-2026-04-14-at-9-05-35-PM.png"
     ],
     [
       6,
-      "@lesliesoldano",
+      "@danielle_below",
       "Flat-Fee",
-      "I can’t believe so many natural deodorants have artificial fragrances! Thank you @Each & Every for making an aluminum free, paraben free deodorant using essential oils 👏👏 #eachandevery #naturaldeodorant #aluminumfreedeodorant #deodorant",
-      "Mar 6",
-      "$98.86",
+      "Turns out I was wearing deodorant wrong this whole time. If your deodorant doesn’t complement your perfume, your scent layering is off. This Each & Every mini set lets you match your deodorant to your fragrance. 🌿✨ @Each & Every  #eachandevery #deodorant #bodycare #signaturescents",
+      "Mar 5",
+      "$108",
       3,
-      "1004",
-      "$82.31",
+      "2602",
+      "$41.51",
       "https://www.tiktok.com/@lesliesoldano/video/7614318921147092237",
       "https://i.ibb.co/cKm8Rt0g/Screenshot-2026-04-14-at-9-08-26-PM.png"
     ],
     [
       7,
-      "@annstyleandbeauty",
+      "@danielle_below",
       "Flat-Fee",
-      "If you’ve been seeing this bundle then this is the sign for you✨ #bodywash #deodrant #daydream #daydreambodywash #citrusscent",
-      "Mar 28",
-      "$45.90",
-      1,
-      "402",
-      "$110.07",
+      "If you’re doing an everything shower, your body wash should feel like skincare too. Clean ingredients, natural fragrance, and my skin feels so soft after. 🫧 @Each & Every  #bodycare #naturalbodycare #plantbasedbodycare",
+      "Mar 12",
+      "$63",
+      3,
+      "1025",
+      "$61.48",
       "https://www.tiktok.com/@annstyleandbeauty/video/7622417967690599710",
       "https://i.ibb.co/wFFppvKM/Screenshot-2026-04-14-at-9-09-22-PM.png"
     ],
     [
       8,
-      "@glambyben",
+      "@lesliesoldano",
       "Flat-Fee",
-      "Body Wash and Deodorant Exclusive Bundle #showerroutine #bodywash #deodorant #fypシ゚viral #tiktokshopcreatorpicks",
-      "Mar 29",
-      "$45.90",
-      1,
-      "238",
-      "$187.35",
+      "4 of @Each & Every natural deodorants so I can decide which scent I like best. Love a good discovery set, especially love an aluminum-free, paraben-free, naturally fragrances deodorant #eachandevery #naturaldeodorant #aluminumfreedeodorant #deodorant",
+      "Mar 8",
+      "$36",
+      2,
+      "439",
+      "$82.00",
       "https://www.tiktok.com/@glambyben/video/7622702453963640094",
       "https://i.ibb.co/s9Gqx6sR/Screenshot-2026-04-14-at-9-10-24-PM.png"
     ],
     [
       9,
-      "@lesliesoldano",
+      "@oliviacella1",
       "Flat-Fee",
-      "4 of @Each & Every natural deodorants so I can decide which scent I like best. Love a good discovery set, especially love an aluminum-free, paraben-free, naturally fragrances deodorant #eachandevery #naturaldeodorant #aluminumfreedeodorant #deodorant",
-      "Mar 8",
-      "$0.00",
-      1,
-      "247",
-      "$115.76",
+      "POV: you finally found a body wash that’s actually clean 🤍🌿   This non-toxic formula is made without sulfates, parabens, or synthetic fragrances—just simple, skin-loving ingredients that cleanse without stripping your skin. Soft, hydrated, and glowing after every shower ✨   Your “everything shower” just got an upgrade 💧   #cleanbeauty #nontoxic #bodywash #everythingshower #glowyskin       @Each & Every",
+      "Mar 18",
+      "$64",
+      2,
+      "4933",
+      "$12.97",
       "https://www.tiktok.com/@lesliesoldano/video/7614957975744105741",
       "https://i.ibb.co/svVSvVGh/Screenshot-2026-04-14-at-9-13-42-PM.png"
     ],
     [
       10,
-      "@victoriaalese",
-      "Flat-Fee",
-      "Every scent is made with clean ingredients so you know what you're putting on your body!! #deodorant #perfumetiktok #smellgood #eachandevery #naturaldeodorant",
-      "Feb 19",
-      "$33.17",
+      "@annstyleandbeauty",
+      "Commission",
+      "If you’ve been seeing this bundle then this is the sign for you✨ #bodywash #deodrant #daydream #daydreambodywash #citrusscent",
+      "Mar 28",
+      "$46",
       1,
-      "130",
-      "$154.28",
+      "406",
+      "$113.05",
       "https://www.tiktok.com/@victoriaalese/video/7608717701460151583",
       "https://i.ibb.co/gMMHdTxv/Screenshot-2026-04-14-at-9-15-16-PM.png"
     ],
     [
       11,
-      "@oliviacella1",
-      "Flat-Fee",
-      "POV: you finally found a body wash that’s actually clean 🤍🌿 This non-toxic formula is made without sulfates, parabens, or synthetic fragrances—just simple, skin-loving ingredients that cleanse without stripping your skin. Soft, hydrated, and glowing after every shower ✨ Your “everything shower” just got an upgrade 💧 #cleanbeauty #nontoxic #bodywash #everythingshower #glowyskin @Each & Every",
-      "Mar 18",
-      "$32.00",
+      "@glambyben",
+      "Commission",
+      "Body Wash and  Deodorant Exclusive Bundle #showerroutine #bodywash #deodorant #fypシ゚viral #tiktokshopcreatorpicks",
+      "Mar 29",
+      "$46",
       1,
-      "3319",
-      "$9.03",
+      "243",
+      "$188.89",
       "https://www.tiktok.com/@oliviacella1/video/7618610168938417421",
       "https://i.ibb.co/MkC5CP42/mrs.png"
     ],
     [
       12,
-      "@danielle_below",
+      "@schweaver5",
       "Flat-Fee",
-      "If you’re doing an everything shower, your body wash should feel like skincare too. Clean ingredients, natural fragrance, and my skin feels so soft after. 🫧 @Each & Every #bodycare #naturalbodycare #plantbasedbodycare",
-      "Mar 12",
-      "$31.02",
+      "Coconut + Lime = Eternal Summer and when you grab this Tik Tok Exclusive bundle you’ll save! #eachandevery #naturaldeodorant #bodycare #fragrance #cleanbeauty @Each & Every",
+      "Apr 9",
+      "$36",
       1,
-      "767",
-      "$27.60",
+      "123",
+      "$291.87",
       "https://www.tiktok.com/@danielle_below/video/7616388101727915294",
       "https://i.ibb.co/zTgm5g2x/psy.png"
     ],
     [
       13,
-      "@digitaljinxy",
-      "Flat-Fee",
-      "For the natural deodorant girlies",
-      "Apr 9",
-      "$26.16",
+      "@victoriaalese",
+      "Commission",
+      "Every scent is made with clean ingredients so you know what you're putting on your body!! #deodorant #perfumetiktok #smellgood #eachandevery #naturaldeodorant",
+      "Feb 19",
+      "$33",
       1,
-      "1129",
-      "$22.40",
+      "258",
+      "$128.57",
       "https://www.tiktok.com/@digitaljinxy/video/7626361026967047437",
       "https://i.ibb.co/GvQrD3mr/abb.png"
     ],
     [
       14,
-      "@defeateddiva",
-      "Flat-Fee",
-      "Rapid Fire #tiktokcreatorpicks #tiktokshopjumpstartsale #tiktokshopspringglowup #unboxingvideo",
-      "Jan 31",
-      "$0.00",
-      0,
-      "3",
-      "$0.00",
+      "@ashleymarie0711",
+      "Commission",
+      "Thank you for saving the day #fyp #viral #deodorant",
+      "Mar 14",
+      "$31",
+      1,
+      "407",
+      "$76.17",
       "https://www.tiktok.com/@defeateddiva/video/7601709299525504287",
       "https://i.ibb.co/Xktc794T/che.png"
     ],
     [
       15,
-      "@jordan__fbi",
-      "Flat-Fee",
-      "#deodorant #pepite #skincare",
-      "Feb 1",
-      "$0.00",
-      0,
-      "0",
-      "$0.00",
+      "@bargin.bag.brenda",
+      "Commission",
+      "Most body washes dry out your skin, the scent disappears in minutes, and you walk out of the shower feeling exactly the same as before. Day Dream leaves my skin feeling amazing. #bodywash  #selfcareroutine  #showerroutine",
+      "Mar 10",
+      "$30",
+      1,
+      "281",
+      "$107.05",
       "https://www.tiktok.com/@jordan__fbi/video/7601915262887120141",
       "https://i.ibb.co/B54RFktZ/clas.png"
     ],
     [
       16,
-      "@makingmemorieswithjess",
+      "@digitaljinxy",
       "Flat-Fee",
-      "Unboxing more TikTok Shop stuff 👀🫣 #tiktokshop #tts #unboxing #haul #jasonwu",
-      "Feb 3",
-      "$0.00",
-      0,
-      "6",
-      "$0.00",
+      "For the natural deodorant girlies",
+      "Apr 9",
+      "$26",
+      1,
+      "1226",
+      "$21.34",
       "https://www.tiktok.com/@makingmemorieswithjess/video/7602807425845955853",
       "https://i.ibb.co/Fqkdcff2/tas.png"
     ],
     [
       17,
-      "@wheres.talyaa",
+      "@defeateddiva",
       "Commission",
-      "#fyp #tiktokshop #viralvideo #xyzcba",
-      "Feb 3",
-      "$0.00",
+      "Rapid Fire #tiktokcreatorpicks #tiktokshopjumpstartsale #tiktokshopspringglowup #unboxingvideo",
+      "Jan 31",
+      "$-",
       0,
-      "4",
-      "$0.00",
+      "5",
+      "$-",
       "https://www.tiktok.com/@wheres.talyaa/video/7602831474122820878",
       "https://i.ibb.co/KptJ1ms5/ros.png"
     ],
     [
       18,
-      "@sassyyetsweetgapeach84",
+      "@glowwithdivine4",
       "Commission",
-      "Overhyped or underrated — let’s see #honestreview #reviews #unboxingvideo #unbox #haul",
-      "Feb 4",
-      "$0.00",
+      "Introducing you to The mini Edit of @each every for for your travel use.",
+      "Jan 31",
+      "$-",
       0,
-      "2",
-      "$0.00",
+      "1",
+      "$-",
       "https://www.tiktok.com/@sassyyetsweetgapeach84/video/7603088805448502559",
       "https://i.ibb.co/LhBjbVMb/tru.png"
     ],
     [
       19,
-      "@yoursoal",
-      "Flat-Fee",
-      "Clean deodorant that smells fresh and natural all day Each & Every 4 pack gives aluminum-free odor protection with skin-friendly ingredients (After Glow hits different) Perfect if you want to smell good without harsh chemicals #naturaldeodorant #cleangrooming #freshscent @Each & Every",
-      "Feb 5",
-      "$0.00",
+      "@jordan__fbi",
+      "Commission",
+      "#deodorant #pepite #skincare",
+      "Feb 1",
+      "$-",
       0,
-      "1",
-      "$0.00",
+      "8",
+      "$-",
       "https://www.tiktok.com/@yoursoal/video/7603137962167061773",
       "https://i.ibb.co/hJPmKW42/lac.png"
     ],
     [
       20,
-      "@heatherohlman",
+      "@makingmemorieswithjess",
       "Commission",
-      "@Each & Every #deodorant #naturaldeodorant #odorfree #nosweat #tiktokshopstockup",
-      "Feb 4",
-      "$0.00",
+      "Unboxing more TikTok Shop stuff 👀🫣 #tiktokshop #tts #unboxing #haul #jasonwu",
+      "Feb 3",
+      "$-",
       0,
-      "5",
-      "$0.00",
+      "6",
+      "$-",
       "https://www.tiktok.com/@heatherohlman/video/7603186532949757197",
       "https://i.ibb.co/4nq17b83/red.png"
     ]
@@ -754,81 +795,81 @@ const D = {
       "Each & Every The Mini Edit 4 Pack",
       "1731288117316129549",
       false,
-      0,
-      0,
-      29
+      1143,
+      190,
+      36
     ],
     [
       "Each & Every Day Dream (Citrus & Vetiver) Body Wash",
       "1729475246315247373",
       false,
-      0,
-      0,
-      23
+      1117,
+      254,
+      37
     ],
     [
       "Body Wash + Deodorant Exclusive Bundle",
       "1729494502817502989",
       true,
-      0,
-      0,
-      3
+      168,
+      49,
+      4
     ],
     [
       "After Glow (Raspberry & Mandarin) Hair & Body Mist",
       "1732268279163687693",
       false,
-      0,
-      874.3,
-      2
+      119,
+      37,
+      3
     ],
     [
       "After Glow (Raspberry & Mandarin) Mini Deodorant",
       "1732268284692108045",
       false,
-      0,
-      0,
-      5
-    ],
-    [
-      "Each & Every Natural Fragrance Deodorant Sunday Morning - Lavender & Lemon 2.5oz",
-      "1730756332847076109",
-      false,
-      0,
-      0,
-      3
+      109,
+      57,
+      8
     ],
     [
       "After Glow (Raspberry & Mandarin) Duo Set (Body Mist + Deodorant)",
+      "1730756332847076109",
+      false,
+      100,
+      0,
+      2
+    ],
+    [
+      "Body Mist Trio (After Glow, Eternal Summer, This Love)",
       "1732268137385530125",
       false,
-      0,
+      100,
       0,
       1
     ],
     [
-      "Eternal Summer (Coconut & Lime) Duo Set (Body Mist + Deodorant)",
+      "Each & Every Natural Fragrance Deodorant Sunday Morning - Lavender & Lemon 2.5oz",
       "1732046882317243149",
       false,
+      95,
       0,
-      0,
-      1
+      4
     ],
     [
-      "This Love (Rose & Vanilla) Duo Set (Body Mist + Deodorant)",
+      "Eternal Summer (Coconut & Lime) Body Wash",
       "1732046667479028493",
       false,
-      0,
-      0,
-      1
+      88,
+      36,
+      3
     ],
     [
       "After Glow (Raspberry & Mandarin) Body Wash",
       "1732268135538594573",
       false,
-      0,
-      0,
-      2
+      84,
+      59,
+      3
     ]
   ],
   "sample_products": [
@@ -837,7 +878,7 @@ const D = {
       "https://i.ibb.co/hRYpjpyR/afterglow.jpg",
       44,
       50,
-      null
+      "Apr 1"
     ],
     [
       "Body Wash Bundle - Day Dream",
@@ -858,7 +899,7 @@ const D = {
       "https://i.ibb.co/0ymGG3pW/sunday.jpg",
       34,
       50,
-      null
+      "Apr 1"
     ]
   ],
   "flat_fee": [
@@ -941,9 +982,9 @@ const D = {
     ],
     [
       "Apr '26",
-      2610,
+      3455,
       true,
-      6525
+      5757
     ]
   ],
   "summary_hero_title": "April is building momentum - 120 active affiliates, $2,610 banked, and 147 samples in the pipeline point to a strong May.",
@@ -978,8 +1019,8 @@ const D = {
     {
       "icon": "",
       "badge": "Concentration Risk",
-      "badge_bg": "var(--red-dim)",
-      "badge_color": "var(--red)",
+      "badge_bg": "var(--blue-dim)",
+      "badge_color": "var(--blue)",
       "title": "@danielle_below drove 38% of all GMV - diversification is urgent",
       "body": "One creator accounting for $987 of $2,610 total GMV creates fragility. If she stops posting, the month collapses. The good news: @lesliesoldano is already showing promise at $288.",
       "action": "Activate 3-5 commission creators this week with personalised outreach and a sample drop."
@@ -987,8 +1028,8 @@ const D = {
     {
       "icon": "",
       "badge": "Pipeline",
-      "badge_bg": "var(--teal-dim)",
-      "badge_color": "var(--teal)",
+      "badge_bg": "var(--blue-dim)",
+      "badge_color": "var(--blue)",
       "title": "147 samples deployed - conversion window opens in 2-3 weeks",
       "body": "All 4 sample bundles are in market. Day Dream and Eternal Summer already hit their targets. The post rate from sampling historically peaks 3-5 weeks after delivery - expect a lift in W3 and W4.",
       "action": "Follow up with all sampled creators this week. Offer to co-create captions to remove friction."
@@ -996,13 +1037,60 @@ const D = {
     {
       "icon": "",
       "badge": "Flat-Fee",
-      "badge_bg": "var(--amber-dim)",
-      "badge_color": "var(--amber)",
+      "badge_bg": "var(--blue-dim)",
+      "badge_color": "var(--blue)",
       "title": "32 flat-fee videos contracted, 0 posted - chase timelines now",
       "body": "$7,000 committed across 5 creators with nothing posted yet. This content needs to land in W3-W4 to impact this month. @schweaver5 has delivered all content already - push others to match.",
       "action": "Send posting deadline reminders to all flat-fee creators. Request draft content for review by Apr 18."
     }
-  ]
+  ],
+  "paid_ads": {
+    "this_month": {
+      "cost": 7227,
+      "orders": 112,
+      "gross_revenue": 3641,
+      "period": "Apr 1-18, 2026"
+    },
+    "last_month": {
+      "cost": 1564,
+      "orders": 29,
+      "gross_revenue": 849,
+      "period": "Mar 1-18, 2026"
+    }
+  },
+  "promotions": [
+    [
+      "Free Shipping",
+      "Free Shipping",
+      "Nov 20",
+      "Dec 31",
+      1286,
+      34,
+      238,
+      5.23
+    ],
+    [
+      "Follower Coupon Add-On",
+      "Follower Coupon",
+      "Mar 16",
+      "Dec 31",
+      2075,
+      59,
+      295,
+      7.04
+    ],
+    [
+      "Bundle Discount",
+      "Product Discount",
+      "Mar 16",
+      "Jun 16",
+      168,
+      4,
+      32,
+      5.2
+    ]
+  ],
+  "current_week": 3
 };
 /* ============================================================
    END OF DATA SECTION  -  do not edit below this line
@@ -1029,6 +1117,7 @@ const D = {
     <a class="nav-link" onclick="navTo('samples',event)">Samples</a>
     <a class="nav-link" onclick="navTo('products',event)">Products</a>
     <a class="nav-link" onclick="navTo('flatfee',event)">Flat-Fee</a>
+    <a class="nav-link" onclick="navTo('paidpromo',event)">Paid &amp; Promos</a>
     <a class="nav-link" onclick="navTo('trends',event)">Trends</a>
     <a class="nav-link" onclick="navTo('summary',event)">Summary</a>
   </div>
@@ -1174,6 +1263,55 @@ const D = {
   </div>
 </div>
 
+<!-- PAID ADS + PROMOTIONS (SIDE BY SIDE) -->
+<div class="section" id="paidpromo">
+  <div class="sec-label">Paid Media &amp; Promotions</div>
+  <div class="sec-title">Paid Ads &amp; Promotions</div>
+  <div class="sec-sub">Paid ad spend efficiency and active promotion performance. MoM comparison for paid, ROI breakdown for each promo.</div>
+  <div class="pp-grid">
+    <!-- PAID ADS PANEL -->
+    <div class="pp-panel">
+      <div class="pp-panel-head">
+        <div>
+          <div class="pp-panel-eyebrow">Paid Ads</div>
+          <div class="pp-panel-title">Spend &amp; Returns</div>
+        </div>
+        <div class="pp-panel-period" id="paid-period-badge"></div>
+      </div>
+      <div class="pp-metrics" id="paid-metrics"></div>
+      <div class="pp-panel-foot" id="paid-foot"></div>
+    </div>
+
+    <!-- PROMOTIONS PANEL -->
+    <div class="pp-panel">
+      <div class="pp-panel-head">
+        <div>
+          <div class="pp-panel-eyebrow">Promotions</div>
+          <div class="pp-panel-title">Active Campaigns</div>
+        </div>
+        <div class="pp-panel-period" id="promo-count-badge"></div>
+      </div>
+      <div class="promo-table-wrap">
+        <table class="promo-table">
+          <thead>
+            <tr>
+              <th>Promotion</th>
+              <th>Type</th>
+              <th>Period</th>
+              <th class="r">GMV</th>
+              <th class="r">Orders</th>
+              <th class="r">Discount</th>
+              <th class="r">ROI</th>
+            </tr>
+          </thead>
+          <tbody id="promo-tbody"></tbody>
+        </table>
+      </div>
+      <div class="pp-panel-foot" id="promo-foot"></div>
+    </div>
+  </div>
+</div>
+
 <!-- TRENDS -->
 <div class="section" id="trends">
   <div class="sec-label">Monthly Trends</div>
@@ -1229,7 +1367,7 @@ const obs=new IntersectionObserver(entries=>{
     document.querySelector(`.nav-link[onclick="navTo('${en.target.id}',event)"]`)?.classList.add('active');
   }});
 },{threshold:0.15,rootMargin:'-85px 0px -55% 0px'});
-['overview','kpi','creators','videos','samples','products','flatfee','trends','summary'].forEach(id=>{
+['overview','kpi','creators','videos','samples','products','flatfee','paidpromo','trends','summary'].forEach(id=>{
   const el=document.getElementById(id);if(el)obs.observe(el);
 });
 function toggleTable(name,label){
@@ -1337,8 +1475,15 @@ new Chart(document.getElementById('pacingChart'),{
     labels:['W1 - Apr 1-7','W2 - Apr 8-14','W3 - Apr 15-21','W4 - Apr 22-30'],
     datasets:[
       {label:'Actual GMV',
-       data:[D.w1_gmv||0, D.w2_partial&&D.w2_gmv?D.w2_gmv:D.w2_gmv||0, 0, 0],
-       backgroundColor:[D.w1_gmv?'#e8284a':'rgba(232,40,74,0.1)', D.w2_gmv&&D.w2_partial?'rgba(232,40,74,0.55)':D.w2_gmv?'#e8284a':'rgba(232,40,74,0.1)','rgba(232,40,74,0.1)','rgba(232,40,74,0.1)'],
+       data:[D.w1_gmv||0, D.w2_gmv||0, D.w3_gmv||0, D.w4_gmv||0],
+       backgroundColor:(function(){
+         const cw=D.current_week||(D.w2_partial?2:0);
+         const partial='rgba(232,40,74,0.55)',closed='#e8284a',empty='rgba(232,40,74,0.1)';
+         return [D.w1_gmv,D.w2_gmv,D.w3_gmv,D.w4_gmv].map((g,idx)=>{
+           if(!g)return empty;
+           return (idx+1===cw)?partial:closed;
+         });
+       })(),
        borderRadius:4,borderSkipped:false,barPercentage:0.9,categoryPercentage:0.85,order:1},
       {label:'Weekly target',data:wTargets,backgroundColor:'#378ADD',
        borderRadius:4,borderSkipped:false,barPercentage:0.9,categoryPercentage:0.85,order:2}
@@ -1349,7 +1494,7 @@ new Chart(document.getElementById('pacingChart'),{
       callbacks:{label:c=>c.raw>0?` ${c.dataset.label}: $${c.raw.toLocaleString()}`:null,filter:i=>i.raw>0}}},
     scales:{
       x:{grid:{display:false},ticks:{font:{family:'DM Sans',size:10},color:'#6b7280'}},
-      y:{grid:{color:'rgba(0,0,0,.04)'},min:0,suggestedMax:Math.ceil(Math.max(...wTargets,D.w1_gmv||0,D.w2_gmv||0,D.w3_gmv||0,D.w4_gmv||0)*1.2/100)*100,ticks:{callback:v=>'$'+(v>=1000?Math.round(v/1000)+'K':v),font:{family:'DM Sans',size:10},color:'#6b7280'}}
+      y:{grid:{color:'rgba(0,0,0,.04)'},min:0,suggestedMax:Math.ceil(Math.max(...wTargets,D.w1_gmv||0,D.w2_gmv||0,D.w3_gmv||0,D.w4_gmv||0)*1.25/100)*100,ticks:{callback:v=>'$'+(v>=1000?Math.round(v/1000)+'K':v),font:{family:'DM Sans',size:10},color:'#6b7280'}}
     }
   }
 });
@@ -1574,6 +1719,78 @@ D.flat_fee.forEach(([handle,month,vids,pay,cpv,gmv,notes])=>{
     ${!hc_f.includes('Notes')?`<td style="font-size:11px;color:var(--soft);font-style:italic;">${notes}</td>`:''}
     </tr>`;
 });
+
+
+/* Paid Ads */
+(function(){
+  const pa=D.paid_ads;if(!pa)return;
+  const tm=pa.this_month, lm=pa.last_month;
+  const cpoTM=tm.orders?tm.cost/tm.orders:0;
+  const cpoLM=lm.orders?lm.cost/lm.orders:0;
+  const roiTM=tm.cost?((tm.gross_revenue-tm.cost)/tm.cost*100):0;
+  const roiLM=lm.cost?((lm.gross_revenue-lm.cost)/lm.cost*100):0;
+  const romas=tm.cost?(tm.gross_revenue/tm.cost):0;
+  const romasLM=lm.cost?(lm.gross_revenue/lm.cost):0;
+
+  document.getElementById('paid-period-badge').textContent=tm.period||'This month';
+
+  function mom(cur,prev,isLowerBetter){
+    if(!prev)return`<span class="pp-metric-badge neu">-> New</span>`;
+    const v=((cur-prev)/prev*100);
+    const up=v>=0;
+    const good=isLowerBetter?!up:up;
+    return`<span class="pp-metric-badge ${good?'up':'dn'}">${up?'^':'v'} ${up?'+':''}${v.toFixed(1)}% vs last month</span>`;
+  }
+
+  const metrics=[
+    {label:'Cost',val:'$'+tm.cost.toLocaleString(),last:'Last month: <strong>$'+lm.cost.toLocaleString()+'</strong>',color:'var(--red)',mom:mom(tm.cost,lm.cost,true)},
+    {label:'Orders',val:tm.orders.toLocaleString(),last:'Last month: <strong>'+lm.orders.toLocaleString()+'</strong>',color:'var(--teal)',mom:mom(tm.orders,lm.orders,false)},
+    {label:'Cost / Order',val:'$'+cpoTM.toFixed(2),last:'Last month: <strong>$'+cpoLM.toFixed(2)+'</strong>',color:'var(--amber)',mom:mom(cpoTM,cpoLM,true)},
+    {label:'Gross Revenue',val:'$'+tm.gross_revenue.toLocaleString(),last:'Last month: <strong>$'+lm.gross_revenue.toLocaleString()+'</strong>',color:'var(--purple)',mom:mom(tm.gross_revenue,lm.gross_revenue,false)},
+    {label:'ROI',val:(roiTM>=0?'+':'')+roiTM.toFixed(0)+'%',last:'Last month: <strong>'+(roiLM>=0?'+':'')+roiLM.toFixed(0)+'%</strong>',color:'var(--green)',mom:mom(roiTM,roiLM,false)},
+    {label:'ROAS',val:romas.toFixed(2)+'x',last:'Last month: <strong>'+romasLM.toFixed(2)+'x</strong>',color:'var(--blue)',mom:mom(romas,romasLM,false)},
+  ];
+  const pm=document.getElementById('paid-metrics');
+  metrics.forEach(m=>{
+    pm.innerHTML+=`<div class="pp-metric">
+      <div class="pp-metric-accent" style="background:${m.color};"></div>
+      <div class="pp-metric-label">${m.label}</div>
+      <div class="pp-metric-val" style="color:${m.color};">${m.val}</div>
+      <div class="pp-metric-last">${m.last}</div>
+      ${m.mom}
+    </div>`;
+  });
+  const spendDelta=tm.cost-lm.cost;
+  const revDelta=tm.gross_revenue-lm.gross_revenue;
+  document.getElementById('paid-foot').innerHTML=`<strong>Takeaway:</strong> Spend up $${spendDelta.toLocaleString()}, revenue up $${revDelta.toLocaleString()}. Every $1 spent returns $${romas.toFixed(2)} (vs $${romasLM.toFixed(2)} last month).`;
+})();
+
+/* Promotions */
+(function(){
+  if(!D.promotions)return;
+  const TYPES=['Free Shipping','Flash-Sale','Product Discount','Buy More Save More','Follower Coupon','Gift With Purchase'];
+  const TYPE_CLASS={'Free Shipping':'t-ship','Flash-Sale':'t-flash','Product Discount':'t-disc','Buy More Save More':'t-bmsm','Follower Coupon':'t-coup','Gift With Purchase':'t-gwp'};
+  const tbody=document.getElementById('promo-tbody');
+  let totalGmv=0,totalOrders=0,totalDisc=0;
+  D.promotions.forEach(([name,type,start,end,gmv,orders,disc,roi],i)=>{
+    totalGmv+=gmv;totalOrders+=orders;totalDisc+=disc;
+    const cls=TYPE_CLASS[type]||'t-disc';
+    const roiPill=roi>=5?'roi-strong':roi>=3?'roi-ok':'roi-weak';
+    tbody.innerHTML+=`<tr>
+      <td><div class="promo-name">${name}</div></td>
+      <td><span class="promo-type-badge ${cls}">${type}</span></td>
+      <td><span class="promo-period">${start} &rarr; ${end}</span></td>
+      <td class="r">$${gmv.toLocaleString()}</td>
+      <td class="r">${orders}</td>
+      <td class="r" style="color:var(--red);">-$${disc.toLocaleString()}</td>
+      <td class="r"><span class="roi-pill ${roiPill}">${roi.toFixed(2)}x</span></td>
+    </tr>`;
+  });
+  const avgRoi=totalDisc?(totalGmv/totalDisc):0;
+  document.getElementById('promo-count-badge').textContent=D.promotions.length+' active';
+  document.getElementById('promo-foot').innerHTML=`<strong>Combined:</strong> $${totalGmv.toLocaleString()} GMV across ${totalOrders} orders, $${totalDisc.toLocaleString()} in discounts given. Blended ROI: <strong>${avgRoi.toFixed(2)}x</strong> (GMV / discount).`;
+
+})();
 
 /* Trends chart */
 document.getElementById('trend-sub').textContent='Current month projected EOMonth: ~$'+D.trends_projected.toLocaleString();
