@@ -977,7 +977,9 @@ const D = {
       "$10K"
     ]
   ],
-  "hidden_sections": [],
+  "hidden_sections": [
+    "flatfee"
+  ],
   "hidden_cols": {
     "creators_cols": [],
     "videos_cols": [],
@@ -998,8 +1000,8 @@ const D = {
     {
       "icon": "",
       "badge": "May Bundle Launch",
-      "badge_bg": "var(--purple-dim)",
-      "badge_color": "var(--purple)",
+      "badge_bg": "var(--blue-dim)",
+      "badge_color": "var(--blue)",
       "title": "New bundle launching in May — testing a fresh hero product for the programme",
       "body": "May will see the launch of a new bundle designed to test a new hero product alongside the core range. This gives creators a compelling new content angle beyond the established deodorant story, and gives the programme a second conversion vehicle. Early bundle content from April (e.g. 'Body Wash + Deodorant Exclusive Bundle') is already showing strong GPM signals — the new launch builds directly on that proof of concept.",
       "action": "Brief flat-fee and top commission creators on the new bundle at launch. Seed samples early to ensure content hits in the first two weeks of May while the launch window is hottest."
@@ -1007,8 +1009,8 @@ const D = {
     {
       "icon": "",
       "badge": "Affiliate Momentum",
-      "badge_bg": "var(--teal-dim)",
-      "badge_color": "var(--teal)",
+      "badge_bg": "var(--blue-dim)",
+      "badge_color": "var(--blue)",
       "title": "123 active affiliates, +124% vs March — the organic engine is compounding",
       "body": "Active creators more than doubled month-over-month, from 55 in March to 123 in April. Total videos posted jumped from 40 to 162. This compounding creator base — combined with a new hero product to promote in May — puts the programme in a strong position to break past the $10K GMV target if the paid budget and product pipeline are both given room to scale.",
       "action": "Prioritise re-activation of top April performers for the May bundle launch, and keep the flat-fee pipeline moving — none of the 5 contracted creators have posted yet."
@@ -1896,17 +1898,18 @@ D.flat_fee.forEach(([handle,month,vids,pay,cpv,gmv,notes])=>{
 
   // Title
   const heroTitle=isClosed
-    ?`April proved the model. <em>May is where we scale it.</em>`
+    ?`${D.report_month} closed — <em>${D.active_affiliates.toLocaleString()} active affiliates</em>, ${D.samples_sent.toLocaleString()} samples deployed, and $${gmvTotal_s.toLocaleString()} GMV.`
     :`${D.report_month} in progress — <em>${D.active_affiliates.toLocaleString()} active affiliates</em> and ${D.samples_sent.toLocaleString()} samples deployed${ffPending>0?`, with ${ffPending} flat-fee video${ffPending===1?'':'s'} still to post`:', all flat-fee videos posted'}.`;
   document.getElementById('sum-title').innerHTML=heroTitle;
 
   // Body
   let heroBody='';
   if(isClosed){
-    const momPct=D.gmv_last_month?((gmvTotal_s-D.gmv_last_month)/D.gmv_last_month*100).toFixed(0):null;
-    heroBody=`${D.report_month} closed at <strong>$${gmvTotal_s.toLocaleString()}</strong>${momPct?` — up <strong>+${momPct}%</strong> vs ${prevMonth} ($${D.gmv_last_month.toLocaleString()})`:''}, with <strong>${D.active_affiliates.toLocaleString()} active affiliates</strong>${affMom?` (+${Math.abs(affMom)}% vs ${prevMonth})`:''}. `;
-    heroBody+=`Paid ads (GMV Max) drove <strong>149 orders</strong> this month — the campaign is converting, but the current budget level means TikTok's algorithm is constrained before it can fully optimise. <strong>A larger GMV Max budget will deliver a direct, incremental lift in sales results</strong>: more spend gives the algorithm more room to find high-intent buyers, compounding the returns we're already seeing. `;
-    heroBody+=`May brings a <strong>new bundle launch</strong> designed to test a fresh hero product — giving creators a compelling new content angle and the programme a second conversion vehicle alongside the core range.`;
+    heroBody=`Month closed at <strong>$${gmvTotal_s.toLocaleString()}</strong>${D.gmv_last_month?` — ${((gmvTotal_s-D.gmv_last_month)/D.gmv_last_month*100).toFixed(0)}% vs ${prevMonth} ($${D.gmv_last_month.toLocaleString()})`:''}.`;
+    heroBody+=` Active affiliates: <strong>${D.active_affiliates.toLocaleString()}</strong>${affMom?` (${parseFloat(affMom)>=0?'up +':'down '}${Math.abs(affMom)}% vs ${prevMonth})`:''}. `;
+    heroBody+=`<strong>${D.samples_sent.toLocaleString()} samples</strong> deployed${samplesMom?` (${samplesMom}% more than ${prevMonth})`:''}`;
+    heroBody+=D.samples_posted>0?` — <strong>${D.samples_posted} posted, ${D.samples_converted} sales, $${D.samples_gmv.toLocaleString()} GMV</strong>. `:`. `;
+    heroBody+=`<strong>${D.flatfee_creators} flat-fee creators</strong> contracted (${D.flatfee_videos} videos, $${D.flatfee_spend.toLocaleString()} committed${ffPending>0?`, ${ffPending} still pending`:', all posted'}). The pipeline built this month will continue converting over the next 4–6 weeks.`;
   } else {
     heroBody=`GMV tracking at <strong>$${gmvTotal_s.toLocaleString()}</strong> with ${D.days_in_month-D.days_elapsed} days remaining. `;
     heroBody+=`Active affiliates: <strong>${D.active_affiliates.toLocaleString()}</strong>${affMom?` (${parseFloat(affMom)>=0?'up +':'down '}${Math.abs(affMom)}% vs ${prevMonth})`:''}. `;
@@ -1915,7 +1918,7 @@ D.flat_fee.forEach(([handle,month,vids,pay,cpv,gmv,notes])=>{
   document.getElementById('sum-body').innerHTML=heroBody;
 
   document.getElementById('sum-action').textContent=isClosed
-    ?`Increase the GMV Max paid ads budget and brief creators on the new May bundle at launch — these are the two highest-leverage actions for next month.`
+    ?`Review top creator performance, brief new creators for next month, and follow up on the ${D.samples_sent-D.samples_posted} sampled creators who haven't posted yet.`
     :`Focus: chase flat-fee posting timelines and activate the ${D.samples_sent-D.samples_posted} sampled creators who haven't posted yet.`;
 
   // Stats
@@ -1937,22 +1940,22 @@ D.flat_fee.forEach(([handle,month,vids,pay,cpv,gmv,notes])=>{
   const ic=document.getElementById('insight-cards');
   const dynamicCards=[
     {
-      icon:'',badge:'Paid Ads',badge_bg:'var(--blue-dim)',badge_color:'var(--blue)',
-      title:`GMV Max is working — a larger budget will deliver incremental sales lift`,
-      body:`Paid ads drove <strong>149 orders</strong> this month, up from 54 in March. The campaign is converting, but at the current budget level the algorithm is being constrained before it can fully optimise. GMV Max scales with spend — more budget means more high-intent buyers reached, and a direct, measurable lift in sales results.`,
-      action:`Increase the GMV Max monthly budget. Even a moderate uplift will allow the algorithm to find more buyers and compound the returns already being generated.`
+      icon:'',badge:'Creators',badge_bg:'var(--teal-dim)',badge_color:'var(--teal)',
+      title:`${D.active_affiliates.toLocaleString()} active affiliates — ${activationRate}% activation rate`,
+      body:`<strong>${D.active_affiliates.toLocaleString()} creators posted</strong> this month out of ${D.enrolled_affiliates.toLocaleString()} enrolled${affMom?` — ${parseFloat(affMom)>=0?'up <strong>+'+affMom+'%</strong>':'down <strong>'+affMom+'%</strong>'} vs ${prevMonth}'s ${D.active_affiliates_last.toLocaleString()} active creators`:''}. ${activationRate}% activation rate from enrolled base.`,
+      action:`Identify top-performing new creators and prioritise them for samples to lock in repeat content.`
     },
     {
-      icon:'',badge:'May Bundle Launch',badge_bg:'var(--purple-dim)',badge_color:'var(--purple)',
-      title:`New bundle launching in May — testing a fresh hero product for the programme`,
-      body:`May brings a new bundle launch designed to test a new hero product alongside the core range. This gives creators a fresh content angle beyond the established deodorant story and the programme a second conversion vehicle. Early bundle content in April (Body Wash + Deodorant Exclusive Bundle) is already showing strong GPM signals — the May launch builds directly on that proof.`,
-      action:`Brief flat-fee and top commission creators on the new bundle at launch. Seed samples early so content hits in the first two weeks of May while the launch window is hottest.`
+      icon:'',badge:'Samples',badge_bg:'var(--amber-dim)',badge_color:'var(--amber)',
+      title:`${D.samples_sent.toLocaleString()} samples deployed — ${postRateS}% post rate, ${convRateS}% conversion`,
+      body:`Of <strong>${D.samples_sent.toLocaleString()} samples</strong> sent, <strong>${D.samples_posted} posted</strong> (${postRateS}%) and <strong>${D.samples_converted} converted</strong> to $${D.samples_gmv.toLocaleString()} GMV. Avg $${Math.round(D.samples_gmv/Math.max(D.samples_converted,1))} per converting creator. ${D.samples_sent-D.samples_posted} creators still haven't posted.`,
+      action:`Send activation nudges to the ${D.samples_sent-D.samples_posted} sampled creators who haven't posted — highest-ROI action right now.`
     },
     {
-      icon:'',badge:'Affiliate Momentum',badge_bg:'var(--teal-dim)',badge_color:'var(--teal)',
-      title:`${D.active_affiliates.toLocaleString()} active affiliates — +${Math.abs(affMom||0)}% vs ${prevMonth}, ${activationRate}% activation rate`,
-      body:`Active creators more than doubled month-over-month, from <strong>${D.active_affiliates_last.toLocaleString()}</strong> in ${prevMonth} to <strong>${D.active_affiliates.toLocaleString()}</strong> in ${D.report_month}. Total videos posted jumped from 40 to 162. This compounding creator base — combined with a new hero product in May — puts the programme in a strong position to break past the $${(D.gmv_target/1000).toFixed(0)}K GMV target.`,
-      action:`Prioritise re-activation of top April performers for the May bundle launch. Chase flat-fee posting timelines — all 5 contracted creators are confirmed but none have posted yet.`
+      icon:'',badge:'Flat-Fee',badge_bg:'var(--red-dim)',badge_color:'var(--red)',
+      title:`${D.flatfee_videos} flat-fee videos contracted — $${D.flatfee_spend.toLocaleString()} committed`,
+      body:`<strong>${D.flatfee_posted} of ${D.flatfee_videos} videos posted</strong> across ${D.flatfee_creators} creators. GMV attributed so far: <strong>$${D.flatfee_gmv.toLocaleString()}</strong>.${ffPending>0?` <strong>${ffPending} videos still pending</strong> — content already paid for and awaiting publication.`:''}${D.flatfee_note?` ${D.flatfee_note}`:''}`,
+      action:ffPending>0?`Chase the ${ffPending} pending flat-fee videos — GMV is already paid for, just needs to go live.`:`All flat-fee videos posted. Review performance and plan next month's briefs.`
     }
   ];
   dynamicCards.forEach(c=>{
