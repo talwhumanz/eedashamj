@@ -236,6 +236,15 @@ footer{background:#fff;border-top:1px solid var(--border);padding:20px 28px;disp
 .roi-strong{background:var(--green-dim);color:var(--green);}
 .roi-ok{background:var(--amber-dim);color:var(--amber);}
 .roi-weak{background:var(--red-dim);color:var(--red);}
+tr.roi-positive{background:#f0fdf4;}
+tr.roi-positive:hover{background:#dcfce7;}
+tr.roi-positive td{color:var(--green)!important;}
+tr.roi-positive td.r{color:var(--green)!important;}
+th.sortable{cursor:pointer;user-select:none;}
+th.sortable:hover{color:var(--ink);}
+th.sortable::after{content:' ⇅';font-size:8px;color:var(--muted);opacity:.5;}
+th.sortable.asc::after{content:' ↑';color:var(--blue);opacity:1;}
+th.sortable.desc::after{content:' ↓';color:var(--blue);opacity:1;}
 </style>
 </head>
 <body>
@@ -248,8 +257,8 @@ const D = {
   "agency": "Humanz",
   "client": "Each & Every",
   "report_month": "Apr 2026",
-  "last_updated": "May 11, 2026",
-  "days_elapsed": 10,
+  "last_updated": "May 18, 2026",
+  "days_elapsed": 17,
   "days_in_month": 31,
   "highlights": "April has $2,610 banked in 12 days - pacing conservatively, but with $7,000 in flat-fee content yet to post and 147 samples activating over the next 3-4 weeks, W3 and W4 are expected to deliver the bulk of the month. Active affiliates are up 135% vs March. The deodorant and body wash categories are resonating - @danielle_below's content is proving the formula works.",
   "pill1_text": "TikTok Shop Overview",
@@ -260,25 +269,25 @@ const D = {
   "gmv_last_month": 2922,
   "w1_gmv": 702,
   "w2_gmv": 406,
-  "w3_gmv": null,
+  "w3_gmv": 120,
   "w4_gmv": null,
-  "w2_partial": true,
-  "w2_days_done": 3,
-  "trends_projected": 0,
-  "active_affiliates": 4,
-  "active_affiliates_last": 76,
+  "w2_partial": false,
+  "w2_days_done": 4,
+  "trends_projected": 2167,
+  "active_affiliates": 6,
+  "active_affiliates_last": 88,
   "affiliates_target": 200,
-  "total_videos": 5,
-  "total_videos_last": 81,
-  "enrolled_affiliates": 5404,
-  "enrolled_affiliates_last": 5404,
-  "samples_sent": 0,
+  "total_videos": 7,
+  "total_videos_last": 118,
+  "enrolled_affiliates": 2314,
+  "enrolled_affiliates_last": 4359,
+  "samples_sent": 176,
   "samples_last_month": 61,
   "samples_target": 250,
   "samples_projection": "Projected GMV impact: ~$4,785-$9,570 based on 4.0%-17.4% historical conversion x $76 avg GMV per converter.",
-  "samples_sent_this_month": 0,
+  "samples_sent_this_month": 176,
   "samples_posted": 0,
-  "samples_converted": 0,
+  "samples_converted": 3,
   "samples_gmv": 0,
   "flatfee_videos": 0,
   "flatfee_spend": 0,
@@ -289,242 +298,242 @@ const D = {
   "creators": [
     [
       1,
-      "shaytionna",
-      "@shaytionna",
+      "victoriaalese",
+      "@victoriaalese",
       "Commission",
-      "$0.00",
-      0,
+      "$36.00",
+      1,
       "",
-      "0",
       0,
-      "$0.00"
+      0,
+      "$7.20"
     ],
     [
       2,
-      "krystal_stabeno",
-      "@krystal_stabeno",
-      "Commission",
-      "$0.00",
-      0,
+      "oliviacella1",
+      "@oliviacella1",
+      "Flat-Fee",
+      "$32.00",
+      1,
       "",
-      "0",
-      2,
-      "$0.00"
+      0,
+      0,
+      "$1.60"
     ],
     [
       3,
-      "sarastolemyname",
-      "@sarastolemyname",
-      "Commission",
-      "$0.00",
-      0,
-      "",
-      "0",
+      "lesliesoldano",
+      "@lesliesoldano",
+      "Flat-Fee",
+      "$27.00",
       1,
-      "$0.00"
+      "",
+      0,
+      0,
+      "$1.35"
     ],
     [
       4,
-      "scentswithcass",
-      "@scentswithcass",
+      "faabulyss",
+      "@faabulyss",
       "Commission",
       "$0.00",
       0,
       "",
-      "0",
+      0,
       0,
       "$0.00"
     ],
     [
       5,
-      "lyssa0718",
-      "@lyssa0718",
-      "Commission",
-      "$0.00",
-      0,
-      "",
-      "0",
-      0,
-      "$0.00"
-    ],
-    [
-      6,
-      "egotdatwork",
-      "@egotdatwork",
-      "Commission",
-      "$0.00",
-      0,
-      "",
-      "0",
-      0,
-      "$0.00"
-    ],
-    [
-      7,
-      "honestadri",
-      "@honestadri",
-      "Commission",
-      "$0.00",
-      0,
-      "",
-      "0",
-      0,
-      "$0.00"
-    ],
-    [
-      8,
-      "barbarobrook",
-      "@barbarobrook",
-      "Commission",
-      "$0.00",
-      0,
-      "",
-      "0",
-      0,
-      "$0.00"
-    ],
-    [
-      9,
-      "desireeturner226",
-      "@desireeturner226",
-      "Commission",
-      "$0.00",
-      0,
-      "",
-      "0",
-      1,
-      "$0.00"
-    ],
-    [
-      10,
-      "kingollie38",
-      "@kingollie38",
-      "Commission",
-      "$0.00",
-      0,
-      "",
-      "0",
-      0,
-      "$0.00"
-    ],
-    [
-      11,
-      "_boujieebabyy_",
-      "@_boujieebabyy_",
-      "Commission",
-      "$0.00",
-      0,
-      "",
-      "0",
-      1,
-      "$0.00"
-    ],
-    [
-      12,
-      "argivesuppliesllc",
-      "@argivesuppliesllc",
-      "Commission",
-      "$0.00",
-      0,
-      "",
-      "0",
-      0,
-      "$0.00"
-    ],
-    [
-      13,
       "unseggyboba",
       "@unseggyboba",
       "Commission",
       "$0.00",
       0,
       "",
-      "0",
-      1,
+      0,
+      0,
+      "$0.00"
+    ],
+    [
+      6,
+      "reviews_by_jocee",
+      "@reviews_by_jocee",
+      "Commission",
+      "$0.00",
+      0,
+      "",
+      0,
+      0,
+      "$0.00"
+    ],
+    [
+      7,
+      "shopwithbratzy",
+      "@shopwithbratzy",
+      "Commission",
+      "$0.00",
+      0,
+      "",
+      0,
+      0,
+      "$0.00"
+    ],
+    [
+      8,
+      "lauramarie2337",
+      "@lauramarie2337",
+      "Commission",
+      "$0.00",
+      0,
+      "",
+      0,
+      0,
+      "$0.00"
+    ],
+    [
+      9,
+      "meganamaka",
+      "@meganamaka",
+      "Commission",
+      "$0.00",
+      0,
+      "",
+      0,
+      0,
+      "$0.00"
+    ],
+    [
+      10,
+      "kierrajoneill",
+      "@kierrajoneill",
+      "Commission",
+      "$0.00",
+      0,
+      "",
+      0,
+      0,
+      "$0.00"
+    ],
+    [
+      11,
+      "therealchampayned",
+      "@therealchampayned",
+      "Commission",
+      "$0.00",
+      0,
+      "",
+      0,
+      0,
+      "$0.00"
+    ],
+    [
+      12,
+      "glooceo_",
+      "@glooceo_",
+      "Commission",
+      "$0.00",
+      0,
+      "",
+      0,
+      0,
+      "$0.00"
+    ],
+    [
+      13,
+      "_kenyierra_",
+      "@_kenyierra_",
+      "Commission",
+      "$0.00",
+      0,
+      "",
+      0,
+      0,
       "$0.00"
     ],
     [
       14,
-      "thayden",
-      "@thayden",
+      "glowwithjessie2",
+      "@glowwithjessie2",
       "Commission",
       "$0.00",
       0,
       "",
-      "0",
-      1,
+      0,
+      0,
       "$0.00"
     ],
     [
       15,
-      "flawlessaddictions",
-      "@flawlessaddictions",
+      "ur.new.gf.nena",
+      "@ur.new.gf.nena",
       "Commission",
       "$0.00",
       0,
       "",
-      "0",
-      1,
+      0,
+      0,
       "$0.00"
     ],
     [
       16,
-      "aquilaskyofficial",
-      "@aquilaskyofficial",
+      "beepana25",
+      "@beepana25",
       "Commission",
       "$0.00",
       0,
       "",
-      "0",
       0,
+      1,
       "$0.00"
     ],
     [
       17,
-      "officiallyquirky",
-      "@officiallyquirky",
+      "timsina_kritika",
+      "@timsina_kritika",
       "Commission",
       "$0.00",
       0,
       "",
-      "0",
+      0,
       0,
       "$0.00"
     ],
     [
       18,
-      "dess_ezell",
-      "@dess_ezell",
+      "morales_family813",
+      "@morales_family813",
       "Commission",
       "$0.00",
       0,
       "",
-      "0",
-      1,
+      0,
+      0,
       "$0.00"
     ],
     [
       19,
-      "billionairebrittx3",
-      "@billionairebrittx3",
+      "aalisha_grg",
+      "@aalisha_grg",
       "Commission",
       "$0.00",
       0,
       "",
-      "0",
-      1,
+      0,
+      0,
       "$0.00"
     ],
     [
       20,
-      "gbmh88",
-      "@gbmh88",
+      "arlene.ohio.nurse",
+      "@arlene.ohio.nurse",
       "Commission",
       "$0.00",
       0,
       "",
-      "0",
-      1,
+      0,
+      0,
       "$0.00"
     ]
   ],
@@ -533,18 +542,70 @@ const D = {
       1,
       "@shellyseashell1.0",
       "Commission",
+      "Every scent is made with clean ingredients so you know what you're putting on your body!! #deodorant #perfumetiktok #smellgood #eachandevery #naturaldeodorant",
+      "2026-02-19",
+      "36",
+      1,
+      "23",
+      "837.21",
+      "https://www.tiktok.com/@victoriaalese/video/7608717701460151583",
+      "https://i.ibb.co/Zp88rS8p/Screenshot-2026-05-19-033119.png"
+    ],
+    [
+      2,
+      "@defeateddiva",
+      "Commission",
+      "POV: you finally found a body wash that’s actually clean 🤍🌿   This non-toxic formula is made without sulfates, parabens, or synthetic fragrances—just simple, skin-loving ingredients that cleanse without stripping your skin. Soft, hydrated, and glowing after every shower ✨   Your “everything shower” just got an upgrade 💧   #cleanbeauty #nontoxic #bodywash #everythingshower #glowyskin       @Each & Every",
+      "2026-03-18",
+      "32",
+      1,
+      "70",
+      "169.31",
+      "https://www.tiktok.com/@oliviacella1/video/7618610168938417421",
+      "https://i.ibb.co/B2b44WYJ/Screenshot-2026-05-19-033231.png"
+    ],
+    [
+      3,
+      "@glowwithdivine4",
+      "Commission",
+      "clean ingredients, actually hydrating for the skin, and it smells amazing. Love this Day Dream (citrus + vetiver) scent @Each & Every #eachandevery #plantbasedskincare #bodywash #plantbasedtiktok",
+      "2026-03-06",
+      "27",
+      1,
+      "770",
+      "25.3",
+      "https://www.tiktok.com/@lesliesoldano/video/7614136155155549453",
+      "https://i.ibb.co/MxyxLK1N/Screenshot-2026-05-19-033311.png"
+    ],
+    [
+      4,
+      "@jordan__fbi",
+      "Commission",
+      "Unboxing + Gift Ideas #unboxing #tiktokshophaul #unboxinghaul #giftideas #tiktokshopholidaydeals #holidayhaul #tiktokshopholidayhaul",
+      "2024-12-10",
+      "0",
+      0,
+      "3",
+      "--",
+      "https://www.tiktok.com/@just_c.j/video/7446918375902629163",
+      "https://i.ibb.co/JwY3MNc2/Screenshot-2026-05-19-033352.png"
+    ],
+    [
+      5,
+      "@makeupfresh",
+      "Commission",
       "#review",
       "2025-02-05",
       "0",
       0,
       "2",
       "--",
-      "https://www.tiktok.com/@danielle_below/video/7611950304942230815",
-      "https://i.ibb.co/PzhwGFKX/Screenshot-2026-04-14-at-8-57-43-PM.png"
+      "https://www.tiktok.com/@shellyseashell1.0/video/7468087900144471327",
+      "https://i.ibb.co/zhCRLppX/Screenshot-2026-05-19-033436.png"
     ],
     [
-      2,
-      "@defeateddiva",
+      6,
+      "@karla.dee",
       "Commission",
       "Rapid Fire #tiktokcreatorpicks #tiktokshopjumpstartsale #tiktokshopspringglowup #unboxingvideo",
       "2026-01-31",
@@ -552,38 +613,38 @@ const D = {
       0,
       "1",
       "--",
-      "https://www.tiktok.com/@danielle_below/video/7611692803613068575",
-      "https://i.ibb.co/ymMpvWjJ/Screenshot-2026-04-14-at-8-59-54-PM.png"
+      "https://www.tiktok.com/@defeateddiva/video/7601709299525504287",
+      "https://i.ibb.co/cKm8Rt0g/Screenshot-2026-04-14-at-9-08-26-PM.png"
     ],
     [
-      3,
-      "@glowwithdivine4",
+      7,
+      "@yoursoal",
       "Commission",
       "Introducing you to The mini Edit of @each every for for your travel use.",
       "2026-01-31",
       "0",
       0,
-      "2",
+      "4",
       "0",
-      "https://www.tiktok.com/@lesliesoldano/video/7614136155155549453",
-      "https://i.ibb.co/Q39mwCLS/eemay1.png"
+      "https://www.tiktok.com/@glowwithdivine4/video/7601754923113450782",
+      "https://i.ibb.co/wFFppvKM/Screenshot-2026-04-14-at-9-09-22-PM.png"
     ],
     [
-      4,
-      "@jordan__fbi",
+      8,
+      "@heatherohlman",
       "Commission",
       "#deodorant #pepite #skincare",
       "2026-02-01",
       "0",
       0,
-      "13",
+      "21",
       "0",
-      "https://v16m.tiktokcdn-us.com/8562cccfe8d27ac340219c99dbfa29d2/69e53fb0/video/tos/useast5/tos-useast5-ve-0068c002-tx/o0fEUEyDgJFBR6qFf5pRDgA4QqW8vqID3hoV8S/?a=1180&bti=OTU3NGYuMTA6&ch=0&cr=0&dr=0&er=0&lr=default&cd=0%7C0%7C0%7C0&cv=1&br=1020&bt=510&cs=0&ds=6&ft=GSDrKInz7ThO7ByPXq8Zmo&mime_type=video_mp4&qs=5&rc=NTg5M2QzNzo7ZWQ3NTRoNEBpajc2cXY5cjtxOTMzZzczNEBjYWNhLi4yNjQxNGE0NTM2YSNwXmVeMmRjcWlhLS1kMS9zcw%3D%3D&vvpl=1&l=20260419144801FAB5DC684748FB5C5A5C&btag=e00088000",
-      "https://i.ibb.co/5xJhZTgs/les.png"
+      "https://www.tiktok.com/@jordan__fbi/video/7601915262887120141",
+      "https://i.ibb.co/s9Gqx6sR/Screenshot-2026-04-14-at-9-10-24-PM.png"
     ],
     [
-      5,
-      "@makeupfresh",
+      9,
+      "@dgine26",
       "Commission",
       "Plus every scent is made with clean ingredients so you know what you’re putting on your body!! #deodorant #perfumetiktok #smellgood #scentoftheday #eachandeverypartner",
       "2026-02-01",
@@ -591,12 +652,12 @@ const D = {
       0,
       "1",
       "0",
-      "https://www.tiktok.com/@danielle_below/video/7611335970729839902",
-      "https://i.ibb.co/GQk5d9sy/eemay2.png"
+      "https://www.tiktok.com/@makeupfresh/video/7601970679495331127",
+      "https://i.ibb.co/svVSvVGh/Screenshot-2026-04-14-at-9-13-42-PM.png"
     ],
     [
-      6,
-      "@karla.dee",
+      10,
+      "@heatherohlman",
       "Commission",
       "Essentials  #ootd #fashion #tiktokshopcreatorpicks #tiktokshopsparkcreator #tiktokshopjumpstartsale",
       "2026-02-02",
@@ -604,12 +665,38 @@ const D = {
       0,
       "1",
       "--",
-      "https://www.tiktok.com/@lesliesoldano/video/7614318921147092237",
-      "https://i.ibb.co/cKm8Rt0g/Screenshot-2026-04-14-at-9-08-26-PM.png"
+      "https://www.tiktok.com/@karla.dee/video/7602425880576625933",
+      "https://i.ibb.co/gMMHdTxv/Screenshot-2026-04-14-at-9-15-16-PM.png"
     ],
     [
-      7,
-      "@yoursoal",
+      11,
+      "@dariasimhony",
+      "Commission",
+      "#fyp #tiktokshop #viralvideo #xyzcba",
+      "2026-02-03",
+      "0",
+      0,
+      "3",
+      "--",
+      "https://www.tiktok.com/@wheres.talyaa/video/7602831474122820878",
+      "https://i.ibb.co/MkC5CP42/mrs.png"
+    ],
+    [
+      12,
+      "@styledbysnacks",
+      "Commission",
+      "Overhyped or underrated — let’s see #honestreview #reviews #unboxingvideo #unbox #haul",
+      "2026-02-04",
+      "0",
+      0,
+      "2",
+      "--",
+      "https://www.tiktok.com/@sassyyetsweetgapeach84/video/7603088805448502559",
+      "https://i.ibb.co/zTgm5g2x/psy.png"
+    ],
+    [
+      13,
+      "@mirabel_elume",
       "Commission",
       "Clean deodorant that smells fresh and natural all day Each & Every 4 pack gives aluminum-free odor protection with skin-friendly ingredients (After Glow hits different) Perfect if you want to smell good without harsh chemicals #naturaldeodorant #cleangrooming #freshscent @Each & Every",
       "2026-02-05",
@@ -617,51 +704,51 @@ const D = {
       0,
       "2",
       "0",
-      "https://www.tiktok.com/@annstyleandbeauty/video/7622417967690599710",
-      "https://i.ibb.co/wFFppvKM/Screenshot-2026-04-14-at-9-09-22-PM.png"
+      "https://www.tiktok.com/@yoursoal/video/7603137962167061773",
+      "https://i.ibb.co/GvQrD3mr/abb.png"
     ],
     [
-      8,
-      "@heatherohlman",
+      14,
+      "@jshirey89",
       "Commission",
       "@Each & Every #deodorant #naturaldeodorant #odorfree #nosweat #tiktokshopstockup",
       "2026-02-04",
       "0",
       0,
-      "1",
+      "9",
       "0",
-      "https://www.tiktok.com/@glambyben/video/7622702453963640094",
-      "https://i.ibb.co/s9Gqx6sR/Screenshot-2026-04-14-at-9-10-24-PM.png"
+      "https://www.tiktok.com/@heatherohlman/video/7603186532949757197",
+      "https://i.ibb.co/Xktc794T/che.png"
     ],
     [
-      9,
-      "@dgine26",
+      15,
+      "@ashleymarie0711",
       "Commission",
       "Savon pouw benyen chak jou pour raffiner pow ave Rach & Every Day Dream (Citrus&vetiver )#bodywash #wash #skincare #haitiantiktok #tiktokshop",
       "2026-02-05",
       "0",
       0,
-      "5",
+      "7",
       "0",
-      "https://www.tiktok.com/@lesliesoldano/video/7614957975744105741",
-      "https://i.ibb.co/svVSvVGh/Screenshot-2026-04-14-at-9-13-42-PM.png"
+      "https://www.tiktok.com/@dgine26/video/7603390136000302366",
+      "https://i.ibb.co/B54RFktZ/clas.png"
     ],
     [
-      10,
-      "@heatherohlman",
+      16,
+      "@kbeeskorner",
       "Commission",
       "@Each & Every #deodorant #naturaldeodorant #sweatproof",
       "2026-02-05",
       "0",
       0,
-      "1",
+      "8",
       "0",
-      "https://www.tiktok.com/@victoriaalese/video/7608717701460151583",
-      "https://i.ibb.co/gMMHdTxv/Screenshot-2026-04-14-at-9-15-16-PM.png"
+      "https://www.tiktok.com/@heatherohlman/video/7603393988816588046",
+      "https://i.ibb.co/Fqkdcff2/tas.png"
     ],
     [
-      11,
-      "@dariasimhony",
+      17,
+      "@terrancewilliamsdesigns",
       "Commission",
       "Soooooo cute im obsessed, stick around to see what I add to his Boo Basket for Valentines 💘  #boobasketideas #boobasket #valentinesdaygift #valentinesdaygiftideas #tiktokmademebuyit",
       "2026-02-05",
@@ -669,12 +756,12 @@ const D = {
       0,
       "6",
       "0",
-      "https://www.tiktok.com/@oliviacella1/video/7618610168938417421",
-      "https://i.ibb.co/MkC5CP42/mrs.png"
+      "https://www.tiktok.com/@dariasimhony/video/7603458851458780447",
+      "https://i.ibb.co/KptJ1ms5/ros.png"
     ],
     [
-      12,
-      "@styledbysnacks",
+      18,
+      "@daddysdeaddolly",
       "Commission",
       "Hands down the best natural deodorant #natural @Each & Every",
       "2026-02-06",
@@ -682,162 +769,124 @@ const D = {
       0,
       "1",
       "0",
-      "https://www.tiktok.com/@danielle_below/video/7616388101727915294",
-      "https://i.ibb.co/zTgm5g2x/psy.png"
-    ],
-    [
-      13,
-      "@mirabel_elume",
-      "Commission",
-      "#tiktokshop #tiktok",
-      "2026-02-06",
-      "0",
-      0,
-      "11",
-      "0",
-      "https://www.tiktok.com/@digitaljinxy/video/7626361026967047437",
-      "https://i.ibb.co/GvQrD3mr/abb.png"
-    ],
-    [
-      14,
-      "@jshirey89",
-      "Commission",
-      "#eachandevery #deodorant #womens",
-      "2026-02-07",
-      "0",
-      0,
-      "2",
-      "0",
-      "https://www.tiktok.com/@defeateddiva/video/7601709299525504287",
-      "https://i.ibb.co/Xktc794T/che.png"
-    ],
-    [
-      15,
-      "@ashleymarie0711",
-      "Commission",
-      "I absolutely love this all natural deodorant from @Each & Every !!! Sunday Morning and After Glow are my fav!!! #naturaldeodorantthatworks #natural #fyp #viralvideo #tiktokshop",
-      "2026-02-07",
-      "0",
-      0,
-      "3",
-      "0",
-      "https://www.tiktok.com/@jordan__fbi/video/7601915262887120141",
-      "https://i.ibb.co/B54RFktZ/clas.png"
-    ],
-    [
-      16,
-      "@kbeeskorner",
-      "Commission",
-      "Each & Every hit it out the ballpark with this scent. It is citrus and vetiver, perfect combination. This body wash has no artificial fragrance, it’s paraben free and sulfate free.  #tiktokshopstockup  #showertok  #citrusbodywash #daydream",
-      "2026-02-08",
-      "0",
-      0,
-      "1",
-      "0",
-      "https://www.tiktok.com/@makingmemorieswithjess/video/7602807425845955853",
-      "https://i.ibb.co/Fqkdcff2/tas.png"
-    ],
-    [
-      17,
-      "@terrancewilliamsdesigns",
-      "Commission",
-      "Mini deodorant pack",
-      "2026-02-07",
-      "0",
-      0,
-      "3",
-      "0",
-      "https://www.tiktok.com/@wheres.talyaa/video/7602831474122820878",
-      "https://i.ibb.co/KptJ1ms5/ros.png"
-    ],
-    [
-      18,
-      "@daddysdeaddolly",
-      "Commission",
-      "@Each & Every got me smellin FRESH! #fypシ #gothgirl #fyppppppppppppppppppppppp #eachandevery #deodorant",
-      "2026-02-07",
-      "0",
-      0,
-      "7",
-      "0",
-      "https://www.tiktok.com/@sassyyetsweetgapeach84/video/7603088805448502559",
+      "https://www.tiktok.com/@styledbysnacks/video/7603774139224165645",
       "https://i.ibb.co/LhBjbVMb/tru.png"
     ],
     [
       19,
       "@nostalgiacorazon",
       "Commission",
-      "Each Every The Mini Edit 4 Pack 0 80z Coconut Lime, Lavender Lemon Rose #Vanilla#Raspberry #Mandarin#clean#ingredientsnoirritation",
-      "2026-02-08",
+      "#tiktokshop #tiktok",
+      "2026-02-06",
       "0",
       0,
-      "1",
+      "14",
       "0",
-      "https://www.tiktok.com/@yoursoal/video/7603137962167061773",
+      "https://www.tiktok.com/@mirabel_elume/video/7603862767795293471",
       "https://i.ibb.co/hJPmKW42/lac.png"
     ],
     [
       20,
       "@aesmith_tiktokshop_ugc",
       "Commission",
-      "The perfect travel set",
-      "2026-02-08",
+      "Mini on the go deodorant",
+      "2026-02-07",
       "0",
       0,
-      "2",
+      "1",
       "0",
-      "https://www.tiktok.com/@heatherohlman/video/7603186532949757197",
+      "https://www.tiktok.com/@pretti.in.ink/video/7604155243357654302",
       "https://i.ibb.co/4nq17b83/red.png"
     ]
   ],
   "products": [
     [
-      "After Glow (Raspberry & Mandarin) Mini Deodorant",
-      "1732268284692108045",
-      false,
-      93,
-      71,
-      5
-    ],
-    [
       "Each & Every The Mini Edit (4 Pack",
       "1731288117316129549",
       false,
-      88,
-      363,
+      153.57,
+      1106.89,
+      5
+    ],
+    [
+      "After Glow (Raspberry & Mandarin) Mini Deodorant",
+      "1732268284692108045",
+      false,
+      130.55,
+      99.71,
+      7
+    ],
+    [
+      "Each & Every Day Dream (Citrus & Vetiver) Body Wash",
+      "1729475246315247373",
+      false,
+      91,
+      1085.15,
       3
     ],
     [
-      "Each & Every Natural Fragrance Deodorant Sunday Morning  - Lavender & Lemon",
+      "Body Wash + Deodorant Exclusive Bundle",
+      "1729494502817502989",
+      true,
+      81.8,
+      168,
+      2
+    ],
+    [
+      "After Glow (Raspberry & Mandarin) Hair & Body Mist",
+      "1732268279163687693",
+      false,
+      68.44,
+      118.8,
+      2
+    ],
+    [
+      "Each & Every Natural Fragrance De",
       "1730756332847076109",
       false,
       61,
-      60,
+      95.05,
+      2
+    ],
+    [
+      "Eternal Summer (Coconut & Lime) Hair & Body mist",
+      "1732268284692042509",
+      false,
+      36.15,
+      0,
       1
     ],
     [
-      "ody Wash + Deodorant Exclusive Bundle",
-      "1729494502817502989",
-      true,
-      40,
-      133,
+      "The Mini Edit, Body Wash",
+      "1732362185852097293",
+      false,
+      34.71,
+      0,
       1
     ],
     [
-      "Sunday Morning (Lavender & Lemon) Body Wash",
+      "Sunday Morning (Lavender & Lemoon) Body Wash",
       "1732268278562198285",
       false,
       27,
       27,
       1
+    ],
+    [
+      "Eternal Summer (Coconut & Lime) Body Wash",
+      "1732268277163594509",
+      false,
+      27,
+      56,
+      1
     ]
   ],
   "sample_products": [
     [
-      "-",
-      "-",
-      0,
-      0,
+      "The Mini Edit, Body Wash",
+      "https://i.ibb.co/m5nj2rbJ/Screenshot-2026-05-19-034641.png",
+      70,
+      150,
       "-"
     ],
     [
@@ -942,31 +991,34 @@ const D = {
     ],
     [
       "Apr '26",
-      406,
+      120,
       true,
-      3324
+      2167
     ]
   ],
-  "summary_hero_title": "April shows the gap clearly, creator activation needs to be rebuilt before scaling",
-  "summary_hero_body": "April closed with $1,108 GMV, which is below the same period last month and far from the $10K monthly target. The main issue is not just revenue. It is activity. Only 4 active affiliates posted this period, compared to 66 active affiliates last month, and total videos dropped from 83 to 5. With only a small number of creators posting, the account does not yet have enough content volume to create consistent sales momentum.\n\nThe paid ads data also shows that spend should be managed carefully. Paid ads generated $352 gross revenue from $406 spend, which means ROAS is still below break even. This does not mean paid ads should stop completely, but it does mean the account needs stronger organic creator content before increasing budget. Paid can only scale what is already working.\n\nThe clearest priority now is to rebuild the creator engine. The programme has 5,404 enrolled affiliates, but activation is currently very low. With no samples sent this period and no flat fee videos live, the fastest path forward is to reactivate enrolled creators, restart sample deployment, and give creators stronger product angles around the best performing products: After Glow Mini Deodorant, The Mini Edit, and the Body Wash + Deodorant bundle.",
-  "summary_hero_action": "Keep paid ads controlled for now and only push spend behind the best performing videos or products once stronger content signals appear.",
+  "summary_hero_title": "April is still under target, but the clearest opportunity is rebuilding creator activity",
+  "summary_hero_body": "April is currently at $1,228 GMV, which is only 12.3% of the $10K monthly target. The current projection is around $2.2K, so the account will need stronger creator activity and more fresh content to close the gap.\n\nThe biggest blocker is not product interest alone. It is content volume. Only 6 active affiliates posted this period, compared to 88 last month, and total videos dropped from 118 to 7. This means the account does not have enough new creator content for TikTok Shop to test, push, and convert consistently.\n\nThere are still positive signals. Sample sending has increased to 176 samples, which is a strong pipeline improvement versus 61 last month. Paid ads also improved in efficiency, generating $170.90 gross revenue from $120.32 spend, or about 1.42x ROAS. The next step is to turn the sample pipeline into posted videos and focus creators on the products already showing demand, especially The Mini Edit, After Glow Mini Deodorant, Day Dream Body Wash, and the Body Wash + Deodorant Bundle.",
+  "summary_hero_action": "Focus this week: turn shipped samples into posted videos, reactivate enrolled affiliates, and keep product messaging centered on the top performing deodorant, mini, and body wash angles",
   "summary_stats": [
     [
       "Total GMV",
-      "$1,108"
+      "$1.2K"
     ],
     [
       "Active Affiliates",
-      "4"
+      "6"
     ],
     [
       "Videos posted",
-      "5"
+      "7"
     ],
     [
       "Paid ads ROAS",
-      "0.87x"
+      "1.42x"
     ]
+  ],
+  "hidden_sections": [
+    "flatfee"
   ],
   "hidden_cols": {
     "creators_cols": [],
@@ -981,41 +1033,41 @@ const D = {
       "badge": "Creator Activation",
       "badge_bg": "var(--blue-dim)",
       "badge_color": "var(--blue)",
-      "title": "Creator activity dropped sharply, making activation the biggest priority",
-      "body": "Only 4 active affiliates posted this period, compared to 66 last month. Total videos also dropped from 83 to 5. This shows that the account’s biggest blocker is not product demand alone. The creator engine needs to be rebuilt so the brand has enough content volume to drive consistent discovery and sales.",
-      "action": "Focus this week: reactivate enrolled creators, restart sample deployment, and build more video volume before increasing paid ads spend"
+      "title": "Creator activity is the main reason revenue is not scaling yet",
+      "body": "Only 6 active affiliates posted this period, down from 88 last month. Total videos also dropped from 118 to 7. With this level of content volume, TikTok does not have enough fresh videos to identify winners and drive consistent sales.",
+      "action": "Prioritize reactivation of enrolled creators and focus outreach on creators who already have strong TikTok Shop history or a clear content angle."
     },
     {
       "icon": "",
-      "badge": "Paid Ads",
+      "badge": "Samples",
       "badge_bg": "var(--blue-dim)",
       "badge_color": "var(--blue)",
-      "title": "Paid ads are producing orders, but the account needs stronger content before scaling spend",
-      "body": "Paid ads generated 13 orders and $352 gross revenue from $406 spend, giving the account a current ROAS of about 0.87x. This shows there is some demand, but paid ads are not efficient enough yet to justify aggressive scaling. The account needs more proven creator content before budget increases.",
-      "action": "Keep paid ads controlled for now and only push spend behind the best performing videos or products once stronger content signals appear."
+      "title": "Samples are moving, but they have not turned into content yet",
+      "body": "Sample sending increased to 176 samples, compared to 61 last month. This is a strong pipeline build, but sampled creator content has not started showing results yet, with 0 videos with samples and $0 sampled creator GMV recorded so far.",
+      "action": "Follow up with sampled creators immediately and give them simple posting prompts to help convert shipped samples into live videos."
     },
     {
       "icon": "",
-      "badge": "Pipeline",
+      "badge": "Product Focus",
       "badge_bg": "var(--blue-dim)",
       "badge_color": "var(--blue)",
-      "title": "The next growth lever is restarting samples and building fresh content volume",
-      "body": "No samples were sent this period, compared to 61 last month. Without new samples or flat fee content, the account has limited new creative entering the system. This makes it harder for TikTok Shop to find winning videos and harder for paid ads to improve efficiency.",
-      "action": "Restart sample deployment and focus on products with the clearest content angles: After Glow Mini Deodorant, The Mini Edit, and the Body Wash + Deodorant bundle."
+      "title": "The content strategy should stay focused on the products with the clearest demand",
+      "body": "The current top products are The Mini Edit, After Glow Mini Deodorant, Day Dream Body Wash, and the Body Wash + Deodorant Bundle. These products have the strongest content angles because they are easy to show through scent routines, clean body care, travel minis, and shower routine content.",
+      "action": "Keep creator briefs focused on these hero products instead of spreading attention across too many SKUs."
     }
   ],
   "paid_ads": {
     "this_month": {
-      "cost": 406,
-      "orders": 13,
-      "gross_revenue": 352,
-      "period": "May 1-10, 2026"
+      "cost": 120.32,
+      "orders": 5,
+      "gross_revenue": 170.9,
+      "period": "May 15-21, 2026"
     },
     "last_month": {
-      "cost": 2922,
-      "orders": 57,
-      "gross_revenue": 1792,
-      "period": "Apr 1-10, 2026"
+      "cost": 1210.88,
+      "orders": 20,
+      "gross_revenue": 614.9,
+      "period": "May 15-21, 2026"
     }
   },
   "promotions": [
@@ -1024,33 +1076,33 @@ const D = {
       "Free Shipping",
       "Nov 20",
       "Dec 31",
-      312.9,
-      9,
-      63,
-      4.97
+      718.1,
+      21,
+      147,
+      4.88
     ],
     [
       "Follower Coupon Add-On",
       "Follower Coupon",
       "Mar 16",
       "Dec 31",
-      2767,
-      82,
-      410,
-      6.75
+      3041.41,
+      90,
+      450,
+      6.76
     ],
     [
       "Bundle Discount",
       "Product Discount",
       "Mar 16",
       "Jun 16",
-      342,
-      8,
-      64.8,
-      5.28
+      383.1,
+      9,
+      72.9,
+      5.26
     ]
   ],
-  "current_week": 2
+  "current_week": 3
 };
 /* ============================================================
    END OF DATA SECTION  -  do not edit below this line
@@ -1159,8 +1211,8 @@ const D = {
   <div class="creator-grid" id="creator-cards"></div>
   <div class="sub-label">Creators 6-20</div>
   <div class="table-wrap">
-    <table class="vtable">
-      <thead><tr><th>#</th><th>Creator</th><th>Type</th><th class="r">GMV</th><th class="r">Orders</th><th class="r">Product Views</th><th class="r">GPM</th><th class="r">Videos</th><th class="r">Commission</th></tr></thead>
+    <table class="vtable" id="creators-table">
+      <thead><tr><th>#</th><th>Creator</th><th>Type</th><th class="r sortable" data-col="3" data-table="creators-table">GMV</th><th class="r sortable" data-col="4" data-table="creators-table">Orders</th><th class="r sortable" data-col="5" data-table="creators-table">Videos</th><th class="r sortable" data-col="6" data-table="creators-table">Commission</th></tr></thead>
       <tbody id="creators-tbody"></tbody>
     </table>
   </div>
@@ -1175,8 +1227,8 @@ const D = {
   <div class="top5-grid" id="video-cards"></div>
   <div class="sub-label">Videos 6-20</div>
   <div class="table-wrap">
-    <table class="vtable">
-      <thead><tr><th>#</th><th>Creator</th><th>Type</th><th>Caption</th><th>Posted</th><th class="r">GMV</th><th class="r">Orders</th><th class="r">Views</th><th class="r">GPM</th><th></th></tr></thead>
+    <table class="vtable" id="videos-table">
+      <thead><tr><th>#</th><th>Creator</th><th>Type</th><th>Caption</th><th>Posted</th><th class="r sortable" data-col="5" data-table="videos-table">GMV</th><th class="r sortable" data-col="6" data-table="videos-table">Orders</th><th class="r sortable" data-col="7" data-table="videos-table">Views</th><th class="r sortable" data-col="8" data-table="videos-table">GPM</th><th></th></tr></thead>
       <tbody id="videos-tbody"></tbody>
     </table>
   </div>
@@ -1216,8 +1268,8 @@ const D = {
   <div class="sec-title" id="flatfee-title"></div>
   <div class="sec-sub">Manual entries. Cost per video = total payment / videos.</div>
   <div class="table-wrap">
-    <table class="fftable">
-      <thead><tr><th>Creator Handle</th><th>Month</th><th class="r">Videos</th><th class="r">Total Payment</th><th class="r">Cost / Video</th><th class="r">GMV Generated</th><th>Notes</th></tr></thead>
+    <table class="fftable" id="flatfee-table">
+      <thead><tr><th>Creator Handle</th><th>Month</th><th class="r sortable" data-col="2" data-table="flatfee-table">Videos</th><th class="r sortable" data-col="3" data-table="flatfee-table">Total Payment</th><th class="r sortable" data-col="4" data-table="flatfee-table">Cost / Video</th><th class="r sortable" data-col="5" data-table="flatfee-table">GMV Generated</th><th>Notes</th></tr></thead>
       <tbody id="flatfee-tbody"></tbody>
     </table>
   </div>
@@ -1283,10 +1335,10 @@ const D = {
       <div class="chart-badge">6-month view</div>
     </div>
     <div class="chart-body">
-      <div style="display:flex;gap:18px;margin-bottom:12px;flex-wrap:wrap;">
-        <div style="display:flex;align-items:center;gap:6px;font-size:11px;color:var(--soft);"><div style="width:12px;height:12px;border-radius:2px;background:#0a9e83;"></div>Closed month</div>
-        <div style="display:flex;align-items:center;gap:6px;font-size:11px;color:var(--soft);"><div style="width:12px;height:12px;border-radius:2px;background:rgba(10,158,131,0.4);"></div>Current month (partial)</div>
-        <div style="display:flex;align-items:center;gap:6px;font-size:11px;color:var(--soft);"><div style="width:12px;height:12px;border-radius:2px;background:rgba(26,111,212,0.2);border:1.5px dashed #1a6fd4;"></div>Projected EOMonth</div>
+      <div id="trend-legend" style="display:flex;gap:18px;margin-bottom:12px;flex-wrap:wrap;">
+        <div style="display:flex;align-items:center;gap:6px;font-size:11px;color:var(--soft);"><div style="width:12px;height:12px;border-radius:2px;background:#0a9e83;"></div><span id="trend-legend-closed-label">Closed month</span></div>
+        <div id="trend-legend-partial" style="display:flex;align-items:center;gap:6px;font-size:11px;color:var(--soft);"><div style="width:12px;height:12px;border-radius:2px;background:rgba(10,158,131,0.4);"></div>Current month (partial)</div>
+        <div id="trend-legend-projected" style="display:flex;align-items:center;gap:6px;font-size:11px;color:var(--soft);"><div style="width:12px;height:12px;border-radius:2px;background:rgba(26,111,212,0.2);border:1.5px dashed #1a6fd4;"></div>Projected EOMonth</div>
       </div>
       <div class="chart-canvas-wrap"><canvas id="trendChart" role="img" aria-label="6-month GMV trend">6-month GMV</canvas></div>
     </div>
@@ -1327,9 +1379,24 @@ const obs=new IntersectionObserver(entries=>{
     document.querySelector(`.nav-link[onclick="navTo('${en.target.id}',event)"]`)?.classList.add('active');
   }});
 },{threshold:0.15,rootMargin:'-85px 0px -55% 0px'});
+/* Hide sections based on hidden_sections data field */
+(function(){
+  const hs=D.hidden_sections||[];
+  const sectionMap={kpi:'kpi',creators:'creators',videos:'videos',samples:'samples',products:'products',flatfee:'flatfee',paidpromo:'paidpromo',trends:'trends',summary:'summary'};
+  hs.forEach(sec=>{
+    const el=document.getElementById(sectionMap[sec]||sec);
+    if(el)el.style.display='none';
+    // Also hide corresponding nav link
+    const navLink=document.querySelector(`.nav-link[onclick*="'${sectionMap[sec]||sec}'"]`);
+    if(navLink)navLink.style.display='none';
+  });
+})();
+
 ['overview','kpi','creators','videos','samples','products','flatfee','paidpromo','trends','summary'].forEach(id=>{
   const el=document.getElementById(id);if(el)obs.observe(el);
 });
+function atHandle(h){h=String(h||'').trim();return h&&!h.startsWith('@')?'@'+h:h;}
+function parseNum(v){if(v===null||v===undefined||v==='')return 0;return parseFloat(String(v).replace(/[$,]/g,''))||0;}
 function toggleTable(name,label){
   const rows=document.querySelectorAll(`#${name}-tbody .collapsible-row`);
   const btn=document.getElementById(`${name}-btn`);
@@ -1372,7 +1439,31 @@ document.getElementById('pill1').textContent=D.pill1_text;
 document.getElementById('pill2').textContent=D.pill2_text;
 document.getElementById('pill3').textContent=D.pill3_text;
 document.getElementById('pill4').textContent=D.pill4_text;
-document.getElementById('highlights').textContent=D.highlights;
+/* Highlights — fully dynamic, never reads from D.highlights */
+(function(){
+  const gmvTotal_h=(D.w1_gmv||0)+(D.w2_gmv||0)+(D.w3_gmv||0)+(D.w4_gmv||0);
+  const isClosed=(D.current_week||0)===0;
+  const affMom=D.active_affiliates_last?((D.active_affiliates-D.active_affiliates_last)/D.active_affiliates_last*100).toFixed(0):null;
+  const prevMonth=D.trends&&D.trends.length>=2?D.trends[D.trends.length-2][0]:'last month';
+  const ffPending=D.flatfee_videos-D.flatfee_posted;
+  const sampleMom=D.samples_last_month?((D.samples_sent-D.samples_last_month)/D.samples_last_month*100).toFixed(0):null;
+  let text=`${D.report_month} — $${gmvTotal_h.toLocaleString()} GMV${isClosed?' (month closed)':`, with ${D.days_in_month-D.days_elapsed>0?D.days_in_month-D.days_elapsed+' days remaining':'all days elapsed'}`}. `;
+  text+=`Active affiliates: ${D.active_affiliates.toLocaleString()}${affMom?` (${parseFloat(affMom)>=0?'+':''}${affMom}% vs ${prevMonth})`:''}. `;
+  text+=`${D.samples_sent.toLocaleString()} samples deployed this month${sampleMom?` (up ${sampleMom}% vs ${D.samples_last_month.toLocaleString()} last month)`:''}`;
+  if(D.samples_posted>0){text+=`, with ${D.samples_posted} videos posted and ${D.samples_converted} converting to $${D.samples_gmv.toLocaleString()} GMV`;}
+  text+=`. `;
+  if(D.flatfee_videos>0){
+    text+=`${D.flatfee_videos} flat-fee video${D.flatfee_videos===1?'':'s'} contracted ($${D.flatfee_spend.toLocaleString()} committed)`;
+    if(ffPending>0) text+=`, ${ffPending} still pending`;
+    else text+=`, all posted`;
+    text+=`. `;
+  }
+  if(D.gmv_last_month){
+    const mom=((gmvTotal_h-D.gmv_last_month)/D.gmv_last_month*100).toFixed(1);
+    text+=`GMV is ${parseFloat(mom)>=0?'up +'+mom+'%':'down '+Math.abs(mom)+'%'} vs ${prevMonth} ($${D.gmv_last_month.toLocaleString()}).`;
+  }
+  document.getElementById('highlights').textContent=text;
+})();
 const _cw=D.current_week||0;document.getElementById('kpi-title').textContent=D.report_month+(_cw>0?' - Week '+_cw+' in progress':' - Month closed');
 document.getElementById('kpi-sub').textContent=D.days_elapsed+' of '+D.days_in_month+' days elapsed - Last updated '+D.last_updated+' - Targets based on Dec-Mar historical pattern';
 document.getElementById('samples-title').textContent=`Samples Tracking  -  ${D.report_month}`;
@@ -1396,7 +1487,8 @@ badge.textContent=`${isUp?'^':'v'} ${isUp?'+':''}${gmvMom}% vs last month ($${D.
 /* Weekly cards */
 const wTargets=[Math.round(D.gmv_target*.151),Math.round(D.gmv_target*.176),Math.round(D.gmv_target*.318),Math.round(D.gmv_target*.356)];
 const wActuals=[D.w1_gmv,D.w2_gmv,D.w3_gmv,D.w4_gmv];
-const wDates=[`Apr 1-7`,`Apr 8-14`,`Apr 15-21`,`Apr 22-30`];
+const _mo=D.report_month.split(' ')[0];
+const wDates=[`${_mo} 1-7`,`${_mo} 8-14`,`${_mo} 15-21`,`${_mo} 22-30`];
 const _cwNum=D.current_week||0;const wStatus=[0,1,2,3].map(i=>_cwNum===0?'closed':i+1===_cwNum?'partial':i+1<_cwNum?'closed':'upcoming');
 const wNotes=[
   'W1 historically averages 15% of monthly GMV. Content is still surfacing  -  normal pattern.',
@@ -1432,7 +1524,7 @@ const wc=document.getElementById('weekly-cards');
 new Chart(document.getElementById('pacingChart'),{
   type:'bar',
   data:{
-    labels:['W1 - Apr 1-7','W2 - Apr 8-14','W3 - Apr 15-21','W4 - Apr 22-30'],
+    labels:[`W1 - ${D.report_month.split(' ')[0]} 1-7`,`W2 - ${D.report_month.split(' ')[0]} 8-14`,`W3 - ${D.report_month.split(' ')[0]} 15-21`,`W4 - ${D.report_month.split(' ')[0]} 22-30`],
     datasets:[
       {label:'Actual GMV',
        data:[D.w1_gmv||0, D.w2_gmv||0, D.w3_gmv||0, D.w4_gmv||0],
@@ -1527,6 +1619,7 @@ if(hc_c.length){
   }
 }
 D.creators.forEach(([rank,name,handle,type,gmv,orders,views,gpm,vids,comm],i)=>{
+  const h=atHandle(handle);
   const av=AV[i%5];
   const initials=name.split(' ').map(w=>w[0]).slice(0,2).join('');
   const tag=type==='Flat-Fee'?'<span class="tag-flat">Flat-Fee</span>':'<span class="tag-comm">Commission</span>';
@@ -1536,25 +1629,23 @@ D.creators.forEach(([rank,name,handle,type,gmv,orders,views,gpm,vids,comm],i)=>{
     ccGrid.innerHTML+=`<div class="ccard">
       <div class="crank" style="background:${rkBg};color:${rkCol};">${rank}</div>
       <div class="ccard-top"><div class="cavatar" style="color:${av.c};border-color:${av.b};background:${av.bg};">${initials}</div>
-      <div><div class="cname">${name}</div><div class="chandle">${handle}</div></div></div>
+      <div><div class="cname">${name}</div><div class="chandle">${h}</div></div></div>
       ${tag}
       <div class="cstats">
         ${!hc_c.includes('GMV')?`<div><div class="cstat-label">GMV</div><div class="cstat-val">${gmv}</div></div>`:''}
         ${!hc_c.includes('Orders')?`<div><div class="cstat-label">Orders</div><div class="cstat-val">${orders}</div></div>`:''}
-        ${!hc_c.includes('Views')?`<div><div class="cstat-label">Views</div><div class="cstat-val">${views}</div></div>`:''}
-        ${!hc_c.includes('GPM')?`<div><div class="cstat-label">GPM</div><div class="cstat-val">${gpm}</div></div>`:''}
+
         ${!hc_c.includes('Videos')?`<div><div class="cstat-label">Videos</div><div class="cstat-val">${vids}</div></div>`:''}
         ${!hc_c.includes('Commission')?`<div><div class="cstat-label">Commission</div><div class="cstat-val">${comm}</div></div>`:''}
       </div></div>`;
   } else {
     const cls=i>=9?'collapsible-row hidden':'';
     ctb.innerHTML+=`<tr class="${cls}"><td><span class="trank">${rank}</span></td>
-      <td><span class="tcreator">${handle}</span><br><span style="font-size:10px;color:var(--soft);">${name}</span></td>
+      <td><span class="tcreator">${h}</span><br><span style="font-size:10px;color:var(--soft);">${name}</span></td>
       <td>${tag}</td>
       ${!hc_c.includes('GMV')?`<td class="gmv">${gmv}</td>`:''}
       ${!hc_c.includes('Orders')?`<td class="r">${orders}</td>`:''}
-      ${!hc_c.includes('Views')?`<td class="r">${views}</td>`:''}
-      ${!hc_c.includes('GPM')?`<td class="r">${gpm}</td>`:''}
+
       ${!hc_c.includes('Videos')?`<td class="r">${vids}</td>`:''}
       ${!hc_c.includes('Commission')?`<td class="r">${comm}</td>`:''}
       </tr>`;
@@ -1565,6 +1656,7 @@ D.creators.forEach(([rank,name,handle,type,gmv,orders,views,gpm,vids,comm],i)=>{
 const vcGrid=document.getElementById('video-cards');
 const vtb=document.getElementById('videos-tbody');
 D.videos.forEach(([rank,handle,type,caption,date,gmv,orders,views,gpm,url,thumb],i)=>{
+  const vh=atHandle(handle);
   const tag=type==='Flat-Fee'?'<span class="tag-flat">Flat-Fee</span>':'<span class="tag-comm">Commission</span>';
   if(i<5){
     vcGrid.innerHTML+=`<div class="vcard">
@@ -1574,7 +1666,7 @@ D.videos.forEach(([rank,handle,type,caption,date,gmv,orders,views,gpm,url,thumb]
         <div class="vrank" style="background:${i===0?'var(--red)':'#9ca3af'};">${rank}</div>
       </div>
       <div class="vbody">
-        <div class="vcreator-row"><span class="vcreator">${handle}</span>${tag}</div>
+        <div class="vcreator-row"><span class="vcreator">${vh}</span>${tag}</div>
         <div class="vtitle">${caption}</div>
         <div class="vstats">
           ${!hc_v.includes('GMV')?`<div><div class="vstat-label">GMV</div><div class="vstat-val" style="color:var(--red);">${gmv}</div></div>`:''}
@@ -1587,7 +1679,7 @@ D.videos.forEach(([rank,handle,type,caption,date,gmv,orders,views,gpm,url,thumb]
   } else {
     const cls=i>=9?'collapsible-row hidden':'';
     vtb.innerHTML+=`<tr class="${cls}"><td><span class="trank">${rank}</span></td>
-      <td><span class="tcreator">${handle}</span></td><td>${tag}</td>
+      <td><span class="tcreator">${vh}</span></td><td>${tag}</td>
       <td><span class="ttitle">${caption}</span></td>
       <td><span class="tdate"> ${date}</span></td>
       <td class="gmv">${gmv}</td><td class="r">${orders}</td><td class="r">${views}</td><td class="r">${gpm}</td>
@@ -1670,16 +1762,45 @@ D.products.forEach(([name,pid,bundle,gmv,lastGmv,orders],i)=>{
 /* Flat fee */
 const fftb=document.getElementById('flatfee-tbody');
 D.flat_fee.forEach(([handle,month,vids,pay,cpv,gmv,notes])=>{
-  fftb.innerHTML+=`<tr><td><span class="tcreator">${handle}</span></td>
+  const fh=atHandle(handle);
+  pay=parseNum(pay);gmv=parseNum(gmv);cpv=parseNum(cpv);vids=parseNum(vids);
+  const isPositiveRoi=gmv>0&&gmv>pay;
+  const rowClass=isPositiveRoi?'roi-positive':'';
+  fftb.innerHTML+=`<tr class="${rowClass}"><td><span class="tcreator">${fh}</span></td>
     <td><span class="tdate">${month}</span></td>
     ${!hc_f.includes('Videos')?`<td class="r">${vids}</td>`:''}
     ${!hc_f.includes('Payment')?`<td class="r">$${pay.toLocaleString()}</td>`:''}
     ${!hc_f.includes('Cost/Vid')?`<td class="r">$${cpv}/vid</td>`:''}
-    ${!hc_f.includes('GMV')?`<td class="r">${gmv>0?'$'+gmv.toLocaleString():' - '}</td>`:''}
+    ${!hc_f.includes('GMV')?`<td class="r">${gmv>0?'$'+gmv.toLocaleString()+(isPositiveRoi?' ✓':''):' - '}</td>`:''}
     ${!hc_f.includes('Notes')?`<td style="font-size:11px;color:var(--soft);font-style:italic;">${notes}</td>`:''}
     </tr>`;
 });
 
+
+/* Sortable tables */
+(function(){
+  document.querySelectorAll('th.sortable').forEach(function(th){
+    th.addEventListener('click',function(){
+      var tableId=th.dataset.table;
+      var col=parseInt(th.dataset.col);
+      var tbody=document.querySelector('#'+tableId+' tbody');
+      if(!tbody)return;
+      var isAsc=th.classList.contains('asc');
+      document.querySelectorAll('#'+tableId+' th.sortable').forEach(function(h){h.classList.remove('asc','desc');});
+      th.classList.add(isAsc?'desc':'asc');
+      var dir=isAsc?-1:1;
+      var rows=Array.from(tbody.querySelectorAll('tr'));
+      rows.sort(function(a,b){
+        var av=(a.cells[col]?a.cells[col].textContent:'').replace(/[$,% ]/g,'').trim();
+        var bv=(b.cells[col]?b.cells[col].textContent:'').replace(/[$,% ]/g,'').trim();
+        var an=parseFloat(av),bn=parseFloat(bv);
+        if(!isNaN(an)&&!isNaN(bn))return(an-bn)*dir;
+        return av.localeCompare(bv)*dir;
+      });
+      rows.forEach(function(r){tbody.appendChild(r);});
+    });
+  });
+})();
 
 /* Paid Ads */
 (function(){
@@ -1722,7 +1843,10 @@ D.flat_fee.forEach(([handle,month,vids,pay,cpv,gmv,notes])=>{
   });
   const spendDelta=tm.cost-lm.cost;
   const revDelta=tm.gross_revenue-lm.gross_revenue;
-  document.getElementById('paid-foot').innerHTML=`<strong>Takeaway:</strong> Spend up $${spendDelta.toLocaleString()}, revenue up $${revDelta.toLocaleString()}. Every $1 spent returns $${romas.toFixed(2)} (vs $${romasLM.toFixed(2)} last month).`;
+  const spendDir=spendDelta>=0?`up $${Math.abs(spendDelta).toLocaleString()}`:`down $${Math.abs(spendDelta).toLocaleString()}`;
+  const revDir=revDelta>=0?`up $${Math.abs(revDelta).toLocaleString()}`:`down $${Math.abs(revDelta).toLocaleString()}`;
+  const roasDir=romas>=romasLM?`improved to ${romas.toFixed(2)}x (from ${romasLM.toFixed(2)}x last month)`:`at ${romas.toFixed(2)}x vs ${romasLM.toFixed(2)}x last month`;
+  document.getElementById('paid-foot').innerHTML=`<strong>Takeaway:</strong> Spend ${spendDir} and revenue ${revDir} vs last month. Every $1 spent returns $${romas.toFixed(2)} — ROAS ${roasDir}.`;
 })();
 
 /* Promotions */
@@ -1752,51 +1876,138 @@ D.flat_fee.forEach(([handle,month,vids,pay,cpv,gmv,notes])=>{
 
 })();
 
-/* Trends chart */
-document.getElementById('trend-sub').textContent='Current month projected EOMonth: ~$'+D.trends_projected.toLocaleString();
-const tLabels=[...D.trends.map(t=>t[0]),'Projected'];
-const tColors=[...D.trends.map(t=>t[2]===true||t[2]==='true'?'rgba(10,158,131,0.4)':'#0a9e83'),'rgba(26,111,212,0.18)'];
-const tBorders=[...D.trends.map(()=>'transparent'),'#1a6fd4'];
-const tData=[...D.trends.map(t=>t[1]),D.trends_projected];
-new Chart(document.getElementById('trendChart'),{
-  type:'bar',
-  data:{labels:tLabels,datasets:[{
-    label:'GMV',data:tData,backgroundColor:tColors,
-    borderColor:tBorders,borderWidth:tBorders.map(b=>b==='transparent'?0:2),
-    borderRadius:4,borderSkipped:false
-  }]},
-  options:{responsive:true,maintainAspectRatio:false,
-    plugins:{legend:{display:false},tooltip:{backgroundColor:'#1a1a2e',titleColor:'#9ca3af',bodyColor:'#fff',padding:8,cornerRadius:6,
-      callbacks:{label:c=>c.label==='Projected'?` Projected EOMonth: ~$${c.raw.toLocaleString()}`:`GMV: $${c.raw.toLocaleString()}`}}},
-    scales:{
-      x:{grid:{display:false},ticks:{font:{family:'DM Sans',size:10},color:'#6b7280',autoSkip:false}},
-      y:{grid:{color:'rgba(0,0,0,.04)'},min:0,suggestedMax:Math.ceil(Math.max(...tData)*1.15/100)*100,ticks:{callback:v=>'$'+(v>=1000?Math.round(v/1000)+'K':v),font:{family:'DM Sans',size:10},color:'#6b7280'}}
-    }
+/* Trends chart — dynamic, closed-month aware */
+(function(){
+  const isClosed=(D.current_week||0)===0;
+  let tLabels, tData, tColors, tBorders, tBorderWidths;
+  if(isClosed){
+    const n=D.trends.length;
+    tLabels=D.trends.map(t=>t[0]);
+    tData=D.trends.map(t=>t[1]);
+    tColors=D.trends.map((_,i)=>i===n-1?'#0a9e83':'rgba(10,158,131,0.35)');
+    tBorders=D.trends.map(()=>'transparent');
+    tBorderWidths=D.trends.map(()=>0);
+    document.getElementById('trend-sub').textContent=`Month closed — total GMV: $${D.trends[n-1][1].toLocaleString()}`;
+    // Hide partial + projected legend items for closed month
+    const lp=document.getElementById('trend-legend-partial');
+    const lproj=document.getElementById('trend-legend-projected');
+    const lcl=document.getElementById('trend-legend-closed-label');
+    if(lp)lp.style.display='none';
+    if(lproj)lproj.style.display='none';
+    if(lcl)lcl.textContent='All months (closed)';
+  } else {
+    tLabels=[...D.trends.map(t=>t[0]),'Projected'];
+    tData=[...D.trends.map(t=>t[1]),D.trends_projected];
+    const n=D.trends.length;
+    tColors=[...D.trends.map((t,i)=>t[2]===true||t[2]==='true'?'rgba(10,158,131,0.4)':i===n-1?'#0a9e83':'rgba(10,158,131,0.35)'),'rgba(26,111,212,0.18)'];
+    tBorders=[...D.trends.map(()=>'transparent'),'#1a6fd4'];
+    tBorderWidths=[...D.trends.map(()=>0),2];
+    document.getElementById('trend-sub').textContent=`Current month projected EOMonth: ~$${D.trends_projected.toLocaleString()}`;
   }
-});
+  new Chart(document.getElementById('trendChart'),{
+    type:'bar',
+    data:{labels:tLabels,datasets:[{
+      label:'GMV',data:tData,backgroundColor:tColors,
+      borderColor:tBorders,borderWidth:tBorderWidths,
+      borderRadius:4,borderSkipped:false
+    }]},
+    options:{responsive:true,maintainAspectRatio:false,
+      plugins:{legend:{display:false},tooltip:{backgroundColor:'#1a1a2e',titleColor:'#9ca3af',bodyColor:'#fff',padding:8,cornerRadius:6,
+        callbacks:{label:c=>c.label==='Projected'?` Projected EOMonth: ~$${c.raw.toLocaleString()}`:`GMV: $${c.raw.toLocaleString()}`}}},
+      scales:{
+        x:{grid:{display:false},ticks:{font:{family:'DM Sans',size:10},color:'#6b7280',autoSkip:false}},
+        y:{grid:{color:'rgba(0,0,0,.04)'},min:0,suggestedMax:Math.ceil(Math.max(...tData)*1.15/100)*100,ticks:{callback:v=>'$'+(v>=1000?Math.round(v/1000)+'K':v),font:{family:'DM Sans',size:10},color:'#6b7280'}}
+      }
+    }
+  });
+})();
 
-/* Summary */
-document.getElementById('sum-eyebrow').textContent=`Hero Insight - ${D.report_month}`;
-document.getElementById('sum-title').innerHTML=D.summary_hero_title;
-document.getElementById('sum-body').innerHTML=D.summary_hero_body;
-document.getElementById('sum-action').textContent=D.summary_hero_action;
-const ss=document.getElementById('sum-stats');
-D.summary_stats.forEach(([label,val])=>{
-  ss.innerHTML+=`<div style="display:flex;flex-direction:column;gap:3px;">
-    <div class="hero-stat-val-t">${val}</div>
-    <div class="hero-stat-label-t">${label}</div>
-  </div>`;
-});
-const ic=document.getElementById('insight-cards');
-D.summary_cards.forEach(c=>{
-  ic.innerHTML+=`<div class="icard">
-    <div class="icard-top"><span style="font-size:20px;">${c.icon}</span>
-    <span class="icard-badge" style="background:${c.badge_bg};color:${c.badge_color};">${c.badge}</span></div>
-    <div class="icard-title">${c.title}</div>
-    <div class="icard-body">${c.body}</div>
-    <div class="icard-action"><div class="icard-action-arrow">-></div><div class="icard-action-text">${c.action}</div></div>
-  </div>`;
-});
+/* Summary — fully dynamic from real data fields, never from hardcoded summary_hero_* fields */
+(function(){
+  const gmvTotal_s=(D.w1_gmv||0)+(D.w2_gmv||0)+(D.w3_gmv||0)+(D.w4_gmv||0);
+  const isClosed=(D.current_week||0)===0;
+  const affMom=D.active_affiliates_last?((D.active_affiliates-D.active_affiliates_last)/D.active_affiliates_last*100).toFixed(0):null;
+  const samplesMom=D.samples_last_month?((D.samples_sent-D.samples_last_month)/D.samples_last_month*100).toFixed(0):null;
+  const ffPending=D.flatfee_videos-D.flatfee_posted;
+  const prevMonth=D.trends&&D.trends.length>=2?D.trends[D.trends.length-2][0]:'last month';
+  const postRateS=D.samples_sent?((D.samples_posted/D.samples_sent)*100).toFixed(0):0;
+  const convRateS=D.samples_posted?((D.samples_converted/D.samples_posted)*100).toFixed(0):0;
+  const activationRate=D.enrolled_affiliates?Math.round(D.active_affiliates/D.enrolled_affiliates*100):0;
+
+  document.getElementById('sum-eyebrow').textContent=`Hero Insight — ${D.report_month}`;
+
+  // Title
+  const heroTitle=isClosed
+    ?`${D.report_month} closed — <em>${D.active_affiliates.toLocaleString()} active affiliates</em>, ${D.samples_sent.toLocaleString()} samples deployed, and $${gmvTotal_s.toLocaleString()} GMV.`
+    :`${D.report_month} in progress — <em>${D.active_affiliates.toLocaleString()} active affiliates</em> and ${D.samples_sent.toLocaleString()} samples deployed${ffPending>0?`, with ${ffPending} flat-fee video${ffPending===1?'':'s'} still to post`:', all flat-fee videos posted'}.`;
+  document.getElementById('sum-title').innerHTML=heroTitle;
+
+  // Body
+  let heroBody='';
+  if(isClosed){
+    heroBody=`Month closed at <strong>$${gmvTotal_s.toLocaleString()}</strong>${D.gmv_last_month?` — ${((gmvTotal_s-D.gmv_last_month)/D.gmv_last_month*100).toFixed(0)}% vs ${prevMonth} ($${D.gmv_last_month.toLocaleString()})`:''}.`;
+    heroBody+=` Active affiliates: <strong>${D.active_affiliates.toLocaleString()}</strong>${affMom?` (${parseFloat(affMom)>=0?'up +':'down '}${Math.abs(affMom)}% vs ${prevMonth})`:''}. `;
+    heroBody+=`<strong>${D.samples_sent.toLocaleString()} samples</strong> deployed${samplesMom?` (${samplesMom}% more than ${prevMonth})`:''}`;
+    heroBody+=D.samples_posted>0?` — <strong>${D.samples_posted} posted, ${D.samples_converted} sales, $${D.samples_gmv.toLocaleString()} GMV</strong>. `:`. `;
+    heroBody+=`<strong>${D.flatfee_creators} flat-fee creators</strong> contracted (${D.flatfee_videos} videos, $${D.flatfee_spend.toLocaleString()} committed${ffPending>0?`, ${ffPending} still pending`:', all posted'}). The pipeline built this month will continue converting over the next 4–6 weeks.`;
+  } else {
+    heroBody=`GMV tracking at <strong>$${gmvTotal_s.toLocaleString()}</strong> with ${D.days_in_month-D.days_elapsed} days remaining. `;
+    heroBody+=`Active affiliates: <strong>${D.active_affiliates.toLocaleString()}</strong>${affMom?` (${parseFloat(affMom)>=0?'up +':'down '}${Math.abs(affMom)}% vs ${prevMonth})`:''}. `;
+    heroBody+=`<strong>${D.samples_sent.toLocaleString()} samples</strong> deployed — conversion window open for the next 4–6 weeks. <strong>${D.flatfee_creators} flat-fee creators</strong> contracted${ffPending>0?`, ${ffPending} video${ffPending===1?'':'s'} still pending`:''}.`;
+  }
+  document.getElementById('sum-body').innerHTML=heroBody;
+
+  document.getElementById('sum-action').textContent=isClosed
+    ?`Review top creator performance, brief new creators for next month, and follow up on the ${D.samples_sent-D.samples_posted} sampled creators who haven't posted yet.`
+    :`Focus: chase flat-fee posting timelines and activate the ${D.samples_sent-D.samples_posted} sampled creators who haven't posted yet.`;
+
+  // Stats
+  const ss=document.getElementById('sum-stats');
+  const dynamicStats=[
+    ['Active affiliates', D.active_affiliates.toLocaleString()],
+    [affMom?`vs ${prevMonth} (${D.active_affiliates_last.toLocaleString()})`:'Enrolled affiliates', affMom?(parseFloat(affMom)>=0?'+':'')+affMom+'%':D.enrolled_affiliates.toLocaleString()],
+    ['Samples deployed', D.samples_sent.toLocaleString()],
+    ['Flat-fee videos', D.flatfee_videos+' ('+D.flatfee_posted+' posted)'],
+  ];
+  dynamicStats.forEach(([label,val])=>{
+    ss.innerHTML+=`<div style="display:flex;flex-direction:column;gap:3px;">
+      <div class="hero-stat-val-t">${val}</div>
+      <div class="hero-stat-label-t">${label}</div>
+    </div>`;
+  });
+
+  // Insight cards
+  const ic=document.getElementById('insight-cards');
+  const dynamicCards=[
+    {
+      icon:'',badge:'Creators',badge_bg:'var(--teal-dim)',badge_color:'var(--teal)',
+      title:`${D.active_affiliates.toLocaleString()} active affiliates — ${activationRate}% activation rate`,
+      body:`<strong>${D.active_affiliates.toLocaleString()} creators posted</strong> this month out of ${D.enrolled_affiliates.toLocaleString()} enrolled${affMom?` — ${parseFloat(affMom)>=0?'up <strong>+'+affMom+'%</strong>':'down <strong>'+affMom+'%</strong>'} vs ${prevMonth}'s ${D.active_affiliates_last.toLocaleString()} active creators`:''}. ${activationRate}% activation rate from enrolled base.`,
+      action:`Identify top-performing new creators and prioritise them for samples to lock in repeat content.`
+    },
+    {
+      icon:'',badge:'Samples',badge_bg:'var(--amber-dim)',badge_color:'var(--amber)',
+      title:`${D.samples_sent.toLocaleString()} samples deployed — ${postRateS}% post rate, ${convRateS}% conversion`,
+      body:`Of <strong>${D.samples_sent.toLocaleString()} samples</strong> sent, <strong>${D.samples_posted} posted</strong> (${postRateS}%) and <strong>${D.samples_converted} converted</strong> to $${D.samples_gmv.toLocaleString()} GMV. Avg $${Math.round(D.samples_gmv/Math.max(D.samples_converted,1))} per converting creator. ${D.samples_sent-D.samples_posted} creators still haven't posted.`,
+      action:`Send activation nudges to the ${D.samples_sent-D.samples_posted} sampled creators who haven't posted — highest-ROI action right now.`
+    },
+    {
+      icon:'',badge:'Flat-Fee',badge_bg:'var(--red-dim)',badge_color:'var(--red)',
+      title:`${D.flatfee_videos} flat-fee videos contracted — $${D.flatfee_spend.toLocaleString()} committed`,
+      body:`<strong>${D.flatfee_posted} of ${D.flatfee_videos} videos posted</strong> across ${D.flatfee_creators} creators. GMV attributed so far: <strong>$${D.flatfee_gmv.toLocaleString()}</strong>.${ffPending>0?` <strong>${ffPending} videos still pending</strong> — content already paid for and awaiting publication.`:''}${D.flatfee_note?` ${D.flatfee_note}`:''}`,
+      action:ffPending>0?`Chase the ${ffPending} pending flat-fee videos — GMV is already paid for, just needs to go live.`:`All flat-fee videos posted. Review performance and plan next month's briefs.`
+    }
+  ];
+  dynamicCards.forEach(c=>{
+    ic.innerHTML+=`<div class="icard">
+      <div class="icard-top"><span style="font-size:20px;">${c.icon}</span>
+      <span class="icard-badge" style="background:${c.badge_bg};color:${c.badge_color};">${c.badge}</span></div>
+      <div class="icard-title">${c.title}</div>
+      <div class="icard-body">${c.body}</div>
+      <div class="icard-action"><div class="icard-action-arrow">-></div><div class="icard-action-text">${c.action}</div></div>
+    </div>`;
+  });
+})();
 </script>
 </body>
 </html>
